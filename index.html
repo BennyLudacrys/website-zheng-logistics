@@ -1,0 +1,3816 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zheng Logistics - We Add Value</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* .header {
+            background: linear-gradient(135deg, #0a2463 0%, #1e3a8a 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+            flex-wrap: wrap;
+        }
+
+        .logo-section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .slogan {
+            font-size: 0.9rem;
+            color: #d4af37;
+            font-style: italic;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .language-selector {
+            position: relative;
+        }
+
+        .language-btn {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .language-dropdown {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin-top: 0.5rem;
+            display: none;
+            min-width: 200px;
+        }
+
+        .language-dropdown.active {
+            display: block;
+        }
+
+        .language-option {
+            padding: 0.8rem 1rem;
+            color: #0a2463;
+            cursor: pointer;
+            transition: background 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .language-option:hover {
+            background: #f0f0f0;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(10, 36, 99, 0.85), rgba(30, 58, 138, 0.85)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%230a2463" width="1200" height="600"/><g opacity="0.3"><path fill="%23d4af37" d="M200 200h100v150h-100z"/><circle fill="%23d4af37" cx="500" cy="300" r="50"/><path fill="%23d4af37" d="M800 250l50 100h-100z"/></g></svg>');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            margin-top: 70px;
+        } */
+
+                /* HEADER RESPONSIVO */
+        .header {
+            background: linear-gradient(135deg, #0a2463 0%, #1e3a8a 100%);
+            color: white;
+            padding: 0.5rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+            flex-wrap: wrap;
+        }
+
+        .logo-section {
+            display: flex;
+            flex-direction: column;
+            min-width: 180px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            white-space: nowrap;
+        }
+
+        .slogan {
+            font-size: 0.8rem;
+            color: #d4af37;
+            font-style: italic;
+            white-space: nowrap;
+        }
+
+        /* Botão do menu hamburguer */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.8rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .language-selector {
+            position: relative;
+        }
+
+        .language-btn {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            white-space: nowrap;
+        }
+
+        .language-dropdown {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin-top: 0.5rem;
+            display: none;
+            min-width: 180px;
+            z-index: 1001;
+        }
+
+        .language-dropdown.active {
+            display: block;
+        }
+
+        .language-option {
+            padding: 0.8rem 1rem;
+            color: #0a2463;
+            cursor: pointer;
+            transition: background 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            white-space: nowrap;
+        }
+
+        .language-option:hover {
+            background: #f0f0f0;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+            font-size: 0.9rem;
+            padding: 0.5rem 0.8rem;
+            border-radius: 4px;
+            white-space: nowrap;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+            background: rgba(255,255,255,0.1);
+        }
+
+        /* Ajuste do hero para compensar o header fixo */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(10, 36, 99, 0.85), rgba(30, 58, 138, 0.85)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%230a2463" width="1200" height="600"/><g opacity="0.3"><path fill="%23d4af37" d="M200 200h100v150h-100z"/><circle fill="%23d4af37" cx="500" cy="300" r="50"/><path fill="%23d4af37" d="M800 250l50 100h-100z"/></g></svg>');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            margin-top: 60px; /* Ajustado para header menor */
+            padding: 1rem;
+        }
+
+        /* MEDIA QUERIES PARA HEADER RESPONSIVO */
+
+        /* Tablets e dispositivos médios */
+        @media (max-width: 992px) {
+            .header {
+                padding: 0.3rem 0;
+            }
+            
+            .nav-container {
+                padding: 0 0.8rem;
+                position: relative;
+            }
+            
+            .logo {
+                font-size: 1.3rem;
+            }
+            
+            .slogan {
+                font-size: 0.75rem;
+            }
+            
+            .menu-toggle {
+                display: block;
+                order: 2;
+            }
+            
+            .logo-section {
+                order: 1;
+                min-width: auto;
+            }
+            
+            .nav-right {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: linear-gradient(135deg, #0a2463 0%, #1e3a8a 100%);
+                flex-direction: column;
+                padding: 1.5rem;
+                gap: 1rem;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+                z-index: 999;
+            }
+            
+            .nav-right.active {
+                display: flex;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+                gap: 0.8rem;
+            }
+            
+            nav a {
+                display: block;
+                text-align: center;
+                padding: 0.8rem;
+                font-size: 1rem;
+                border-radius: 5px;
+                background: rgba(255,255,255,0.05);
+            }
+            
+            .language-selector {
+                width: 100%;
+            }
+            
+            .language-btn {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .language-dropdown {
+                width: 100%;
+                right: auto;
+                left: 0;
+            }
+            
+            .hero {
+                margin-top: 55px; /* Header mais compacto */
+            }
+        }
+
+        /* Smartphones */
+        @media (max-width: 768px) {
+            .header {
+                padding: 0.2rem 0;
+            }
+            
+            .nav-container {
+                padding: 0 0.5rem;
+            }
+            
+            .logo {
+                font-size: 1.2rem;
+            }
+            
+            .slogan {
+                font-size: 0.7rem;
+            }
+            
+            .menu-toggle {
+                font-size: 1.5rem;
+                padding: 0.4rem;
+            }
+            
+            .nav-right {
+                padding: 1rem;
+            }
+            
+            nav a {
+                padding: 0.7rem;
+                font-size: 0.95rem;
+            }
+            
+            .language-btn {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.85rem;
+            }
+            
+            .hero {
+                margin-top: 50px;
+                min-height: calc(100vh - 50px);
+            }
+            
+            .hero-content {
+                padding: 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+                margin-bottom: 0.5rem;
+            }
+            
+            .hero .tagline {
+                font-size: 1.1rem;
+                margin-bottom: 0.8rem;
+            }
+            
+            .hero p {
+                font-size: 0.95rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        /* Smartphones muito pequenos */
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.1rem;
+            }
+            
+            .slogan {
+                font-size: 0.65rem;
+            }
+            
+            .menu-toggle {
+                font-size: 1.3rem;
+            }
+            
+            .nav-right {
+                padding: 0.8rem;
+            }
+            
+            nav a {
+                padding: 0.6rem;
+                font-size: 0.9rem;
+            }
+            
+            .language-btn {
+                padding: 0.35rem 0.7rem;
+                font-size: 0.8rem;
+            }
+            
+            .hero {
+                margin-top: 45px;
+                min-height: calc(100vh - 45px);
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero .tagline {
+                font-size: 1rem;
+            }
+            
+            .cta-button {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.95rem;
+            }
+        }
+
+        /* Smartphones em orientação paisagem */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .hero {
+                margin-top: 45px;
+                padding: 0.5rem;
+                min-height: calc(100vh - 45px);
+            }
+            
+            .hero-content {
+                padding: 0.5rem;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+                margin-bottom: 0.3rem;
+            }
+            
+            .hero .tagline {
+                font-size: 1rem;
+                margin-bottom: 0.5rem;
+            }
+            
+            .hero p {
+                font-size: 0.9rem;
+                margin-bottom: 1rem;
+                line-height: 1.4;
+            }
+            
+            .cta-buttons {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            
+            .cta-button {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.9rem;
+            }
+            
+            .stats-bar {
+                padding: 0.8rem;
+                margin-top: 1rem;
+            }
+        }
+
+        /* Para telas muito altas */
+        @media (min-height: 800px) and (max-width: 768px) {
+            .hero {
+                min-height: 600px;
+            }
+        }
+
+        .hero-content {
+            max-width: 900px;
+            padding: 2rem;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            letter-spacing: 2px;
+        }
+
+        .hero .tagline {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #d4af37;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            background: #d4af37;
+            color: #0a2463;
+            padding: 1rem 3rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background: #f0c929;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+        }
+
+        .cta-button-secondary {
+            background: transparent;
+            border: 2px solid #d4af37;
+            color: #d4af37;
+        }
+
+        .cta-button-secondary:hover {
+            background: #d4af37;
+            color: #0a2463;
+        }
+
+        .stats-bar {
+            background: rgba(212, 175, 55, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            margin-top: 3rem;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #d4af37;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .section {
+            padding: 6rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-alt {
+            background: linear-gradient(135deg, #f5f5dc 0%, #e8dcc4 100%);
+        }
+
+        .section-dark {
+            background: linear-gradient(135deg, #0a2463 0%, #1e3a8a 100%);
+            color: #d4af37;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            color: #0a2463;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .section-dark .section-title {
+            color: white;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 4rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-dark .section-subtitle {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: #d4af37;
+            margin: 1rem auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.4s;
+            text-align: center;
+            border: 2px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(10, 36, 99, 0.2);
+            border-color: #d4af37;
+        }
+
+        .service-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
+            color: #0a2463;
+            margin-bottom: 1rem;
+            font-size: 1.6rem;
+        }
+
+        .service-card p {
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .service-features {
+            margin-top: 1.5rem;
+            text-align: left;
+            padding-left: 1rem;
+            list-style: none; 
+        }
+
+        .service-features li {
+            margin-bottom: 0.5rem;
+            color: #666;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .service-features li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #d4af37;
+            font-weight: bold;
+        }
+
+        .transport-modes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .transport-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.4s;
+        }
+
+        .transport-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(10, 36, 99, 0.2);
+        }
+
+        .transport-image {
+            height: 200px;
+            background: linear-gradient(135deg, #0a2463 0%, #1e3a8a 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+        }
+
+        .transport-content {
+            padding: 2rem;
+        }
+
+        .transport-card h3 {
+            color: #0a2463;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .feature-item {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            flex-shrink: 0;
+        }
+
+        .feature-content h3 {
+            color: #0a2463;
+            margin-bottom: 0.5rem;
+            font-size: 1.4rem;
+        }
+
+        .feature-content p {
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .locations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .location-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: all 0.4s;
+            border: 2px solid transparent;
+        }
+
+        .location-card:hover {
+            transform: translateY(-10px);
+            border-color: #d4af37;
+            box-shadow: 0 15px 40px rgba(10, 36, 99, 0.2);
+        }
+
+        .flag {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .location-card h3 {
+            color: #0a2463;
+            margin-bottom: 1rem;
+            font-size: 1.6rem;
+        }
+
+        .location-card .address {
+            margin: 1rem 0;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .location-card .phone {
+            margin-top: 1rem;
+            font-weight: bold;
+            color: #d4af37;
+            font-size: 1.1rem;
+        }
+
+        .process-timeline {
+            position: relative;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 1fr 80px 1fr;
+            gap: 2rem;
+            margin-bottom: 4rem;
+            align-items: center;
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .timeline-content h3 {
+            color: #0a2463;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-icon {
+            width: 80px;
+            height: 80px;
+            background: #d4af37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #0a2463 0%, #1e3a8a 100%);
+            color: white;
+            padding: 6rem 2rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 3rem auto;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2.5rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s;
+        }
+
+        .contact-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .contact-card h3 {
+            color: #d4af37;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .contact-card p {
+            margin-bottom: 0.8rem;
+            line-height: 1.6;
+        }
+
+        .social-section {
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .social-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            transition: all 0.3s;
+            text-decoration: none;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .social-icon:hover {
+            background: #d4af37;
+            transform: translateY(-5px);
+            border-color: #d4af37;
+        }
+
+        .contact-form-section {
+            max-width: 800px;
+            margin: 3rem auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 3rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #d4af37;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #d4af37;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1.2rem;
+            background: #d4af37;
+            color: #0a2463;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #f0c929;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+        }
+
+        .footer {
+            background: #0a2463;
+            color: white;
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h4 {
+            color: #d4af37;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: #d4af37;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            40% {
+                transform: translateX(-50%) translateY(-20px);
+            }
+            60% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2.5rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .testimonial-author {
+            color: #d4af37;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-right {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+                width: 100%;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .tagline {
+                font-size: 1.3rem;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline-item {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .timeline-item .timeline-content:last-child {
+                display: none;
+            }
+        }
+
+        .value-props {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .value-prop {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .value-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .value-prop h4 {
+            color: white;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo-section">
+                <div class="logo">ZHENG LOGISTICS</div>
+                <div class="slogan">We Add Value</div>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <div class="nav-right" id="navRight">
+                <nav>
+                    <ul>
+                        <li><a href="#home" class="nav-link">Início</a></li>
+                        <li><a href="#services" class="nav-link">Serviços</a></li>
+                        <li><a href="#transport" class="nav-link">Transporte</a></li>
+                        <li><a href="#about" class="nav-link">Sobre</a></li>
+                        <li><a href="#process" class="nav-link">Processo</a></li>
+                        <li><a href="#locations" class="nav-link">Localizações</a></li>
+                        <li><a href="#contact" class="nav-link">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="language-selector">
+                    <button class="language-btn" onclick="toggleLanguage()">
+                        <span id="currentLang">🇵🇹 Português</span>
+                        <span>▼</span>
+                    </button>
+                    <div class="language-dropdown" id="langDropdown">
+                        <div class="language-option" onclick="changeLang('pt')">🇵🇹 Português</div>
+                        <div class="language-option" onclick="changeLang('en')">🇬🇧 English</div>
+                        <div class="language-option" onclick="changeLang('fr')">🇫🇷 Français</div>
+                        <div class="language-option" onclick="changeLang('zh')">🇨🇳 中文</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">ZHENG LOGISTICS</h1>
+            <p class="tagline">We Add Value</p>
+            <p class="hero-desc">Conectando África e Ásia com Excelência em Soluções Logísticas Integradas. Transporte Marítimo, Aéreo e Terrestre. Importação de Veículos. Armazenagem Segura.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="cta-button">Solicite um Orçamento</a>
+                <a href="#services" class="cta-button cta-button-secondary">Nossos Serviços</a>
+            </div>
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Países</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Anos de Experiência</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">Clientes Satisfeitos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Suporte</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="white">
+                <path d="M20 5 L20 30 M20 30 L10 20 M20 30 L30 20" stroke="white" stroke-width="3" fill="none"/>
+            </svg>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <h2 class="section-title">Nossos Serviços Completos</h2>
+        <p class="section-subtitle">Oferecemos uma gama completa de soluções logísticas personalizadas para atender às necessidades específicas do seu negócio, garantindo eficiência, segurança e pontualidade em cada etapa.</p>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">📦</div>
+                <h3>Armazenagem Profissional</h3>
+                <p>Infraestrutura moderna e segura para armazenamento de mercadorias com sistemas de gestão de inventário em tempo real.</p>
+                <ul class="service-features">
+                    <li>Armazéns climatizados</li>
+                    <li>Sistema WMS avançado</li>
+                    <li>Segurança 24/7</li>
+                    <li>Gestão de stock em tempo real</li>
+                    <li>Picking e packing personalizados</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📋</div>
+                <h3>Despacho Aduaneiro</h3>
+                <p>Processamento ágil e eficiente de toda documentação aduaneira com conhecimento profundo das regulamentações locais.</p>
+                <ul class="service-features">
+                    <li>Classificação pautal</li>
+                    <li>Regimes aduaneiros especiais</li>
+                    <li>Licenças de importação/exportação</li>
+                    <li>Consultoria fiscal</li>
+                    <li>Representação alfandegária</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🚚</div>
+                <h3>Transporte Multimodal</h3>
+                <p>Soluções completas de transporte terrestre com frota própria e parceiros qualificados, garantindo entregas pontuais.</p>
+                <ul class="service-features">
+                    <li>Transporte dedicado</li>
+                    <li>Rastreamento GPS em tempo real</li>
+                    <li>Seguro de cargas</li>
+                    <li>Entregas urgentes</li>
+                    <li>Cross-docking</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🛒</div>
+                <h3>Procurement & Sourcing</h3>
+                <p>Gestão completa de compras na China e mercados internacionais, incluindo negociação, inspeção de qualidade e consolidação.</p>
+                <ul class="service-features">
+                    <li>Pesquisa de fornecedores</li>
+                    <li>Negociação de preços</li>
+                    <li>Controlo de qualidade</li>
+                    <li>Consolidação de cargas</li>
+                    <li>Acompanhamento de produção</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🌍</div>
+                <h3>Trânsito Aduaneiro</h3>
+                <p>Facilitação de trânsito internacional de mercadorias com gestão completa de documentação e procedimentos alfandegários.</p>
+                <ul class="service-features">
+                    <li>Regimes de trânsito</li>
+                    <li>Garantias bancárias</li>
+                    <li>Acompanhamento 24/7</li>
+                    <li>Corredores internacionais</li>
+                    <li>Gestão de fronteiras</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">⚖️</div>
+                <h3>Importação & Exportação</h3>
+                <p>Serviços completos de comércio exterior com expertise em mercados africanos e asiáticos, facilitando o seu negócio global.</p>
+                <ul class="service-features">
+                    <li>Consultoria de comércio</li>
+                    <li>Documentação completa</li>
+                    <li>Certificados de origem</li>
+                    <li>Pagamentos internacionais</li>
+                    <li>Compliance regulatório</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🚗</div>
+                <h3>Importação de Veículos</h3>
+                <p>Especialistas em importação de veículos novos e usados da China, Europa e outros mercados com processo simplificado.</p>
+                <ul class="service-features">
+                    <li>Veículos novos e usados</li>
+                    <li>Inspeção pré-embarque</li>
+                    <li>Documentação completa</li>
+                    <li>Seguro internacional</li>
+                    <li>Entrega porta a porta</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3>Consultoria Logística</h3>
+                <p>Análise e otimização da sua cadeia de abastecimento para reduzir custos e aumentar a eficiência operacional.</p>
+                <ul class="service-features">
+                    <li>Auditoria logística</li>
+                    <li>Otimização de rotas</li>
+                    <li>Redução de custos</li>
+                    <li>Planeamento estratégico</li>
+                    <li>Gestão de KPIs</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="transport" class="section section-dark">
+        <h2 class="section-title">Modalidades de Transporte</h2>
+        <p class="section-subtitle">Oferecemos soluções completas de transporte marítimo, aéreo e terrestre, adaptadas às necessidades específicas da sua carga e prazos.</p>
+        <div class="transport-modes">
+            <div class="transport-card">
+                <div class="transport-image">🚢</div>
+                <div class="transport-content">
+                    <h3>Transporte Marítimo</h3>
+                    <p><strong>Carga FCL (Container Completo)</strong></p>
+                    <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                        <li>Containers 20' e 40'</li>
+                        <li>High Cube disponível</li>
+                        <li>Consolidação de cargas</li>
+                    </ul>
+                    <p><strong>Carga LCL (Carga Fracionada)</strong></p>
+                    <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                        <li>Consolidação semanal</li>
+                        <li>Armazenagem incluída</li>
+                        <li>Flexibilidade de volumes</li>
+                    </ul>
+                    <p style="margin-top: 1rem;"><strong>Rotas Principais:</strong> China → Moçambique, China → Costa do Marfim, China → Mali</p>
+                </div>
+            </div>
+            <div class="transport-card">
+                <div class="transport-image">✈️</div>
+                <div class="transport-content">
+                    <h3>Transporte Aéreo</h3>
+                    <p><strong>Carga Aérea Express</strong></p>
+                    <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                        <li>Entregas em 3-5 dias</li>
+                        <li>Ideal para urgências</li>
+                        <li>Mercadorias de alto valor</li>
+                    </ul>
+                    <p><strong>Carga Aérea Standard</strong></p>
+                    <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                        <li>Entregas em 7-10 dias</li>
+                        <li>Melhor custo-benefício</li>
+                        <li>Rastreamento completo</li>
+                    </ul>
+                    <p style="margin-top: 1rem;"><strong>Especialidades:</strong> Produtos perecíveis, eletrónicos, documentos importantes, amostras</p>
+                </div>
+            </div>
+            <div class="transport-card">
+                <div class="transport-image">🚛</div>
+                <div class="transport-content">
+                    <h3>Transporte Terrestre</h3>
+                    <p><strong>Distribuição Nacional</strong></p>
+                    <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                        <li>Entregas em todo Moçambique</li>
+                        <li>Frota própria e parceiros</li>
+                        <li>Cargas fracionadas e completas</li>
+                    </ul>
+                    <p><strong>Transporte Regional</strong></p>
+                    <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                        <li>Corredores SADC</li>
+                        <li>África Ocidental</li>
+                        <li>Cross-border expertise</li>
+                    </ul>
+                    <p style="margin-top: 1rem;"><strong>Veículos:</strong> Camiões de 3 a 30 toneladas, carretas, veículos refrigerados</p>
+                </div>
+            </div>
+            <div class="transport-card">
+                <div class="transport-image">🚗</div>
+                <div class="transport-content">
+                    <h3>Importação de Veículos</h3>
+                    <p><strong>Veículos Ligeiros</strong></p>
+                    <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                        <li>Carros de passeio</li>
+                        <li>SUVs e Pick-ups</li>
+                        <li>Vans comerciais</li>
+                    </ul>
+                    <p><strong>Veículos Pesados</strong></p>
+                    <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                        <li>Camiões e autocarros</li>
+                        <li>Máquinas de construção</li>
+                        <li>Tratores agrícolas</li>
+                    </ul>
+                    <p style="margin-top: 1rem;"><strong>Processo Completo:</strong> Compra, inspeção, embarque, desalfandegamento e entrega</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section section-alt">
+        <h2 class="section-title">Sobre a Zheng Logistics</h2>
+        <p class="section-subtitle">Somos uma empresa líder em soluções logísticas integradas, construindo pontes comerciais entre África e Ásia há mais de uma década.</p>
+        
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon">🎯</div>
+                <div class="feature-content">
+                    <h3>Nossa Missão</h3>
+                    <p>Facilitar o comércio internacional através de soluções logísticas inovadoras, eficientes e personalizadas, agregando valor real aos negócios dos nossos clientes e contribuindo para o desenvolvimento económico das regiões onde operamos.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">👁️</div>
+                <div class="feature-content">
+                    <h3>Nossa Visão</h3>
+                    <p>Ser a empresa de logística mais confiável e preferida na conexão entre África e Ásia, reconhecida pela excelência operacional, inovação tecnológica e compromisso com a sustentabilidade.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">💎</div>
+                <div class="feature-content">
+                    <h3>Nossos Valores</h3>
+                    <p>Integridade, Excelência, Inovação, Compromisso com o Cliente, Trabalho em Equipa, Responsabilidade Social e Ambiental. Estes valores guiam todas as nossas decisões e ações diárias.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 4rem;">
+            <h3 style="text-align: center; font-size: 2rem; color: #0a2463; margin-bottom: 2rem;">Porque Escolher a Zheng Logistics?</h3>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🌐</div>
+                    <div class="feature-content">
+                        <h3>Presença Internacional</h3>
+                        <p>Escritórios estratégicos em 4 países (Moçambique, China, Mali e Costa do Marfim) garantem suporte local e conhecimento profundo dos mercados.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <div class="feature-content">
+                        <h3>Agilidade & Eficiência</h3>
+                        <p>Processos otimizados e tecnologia de ponta para garantir prazos reduzidos e custos competitivos em todas as operações.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔒</div>
+                    <div class="feature-content">
+                        <h3>Segurança Garantida</h3>
+                        <p>Seguros abrangentes, rastreamento em tempo real e procedimentos rigorosos de manuseamento para proteger as suas mercadorias.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">👥</div>
+                    <div class="feature-content">
+                        <h3>Equipa Experiente</h3>
+                        <p>Profissionais qualificados com vasta experiência em logística internacional, alfândegas e comércio exterior.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💻</div>
+                    <div class="feature-content">
+                        <h3>Tecnologia Avançada</h3>
+                        <p>Sistemas de gestão modernos que permitem rastreamento em tempo real, relatórios detalhados e transparência total nas operações.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🤝</div>
+                    <div class="feature-content">
+                        <h3>Parceria de Confiança</h3>
+                        <p>Relacionamento de longo prazo com clientes, baseado em transparência, comunicação clara e compromisso com resultados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="section">
+        <h2 class="section-title">Como Trabalhamos</h2>
+        <p class="section-subtitle">Nosso processo simplificado garante uma experiência sem complicações do início ao fim da sua operação logística.</p>
+        
+        <div class="process-timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>1. Consulta Inicial</h3>
+                    <p>Entre em contacto connosco através de qualquer canal. Nossa equipa analisa suas necessidades e fornece uma proposta personalizada com prazo e orçamento detalhados.</p>
+                </div>
+                <div class="timeline-icon">📞</div>
+                <div class="timeline-content" style="background: transparent; box-shadow: none;"></div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content" style="background: transparent; box-shadow: none;"></div>
+                <div class="timeline-icon">📋</div>
+                <div class="timeline-content">
+                    <h3>2. Planeamento</h3>
+                    <p>Desenvolvemos um plano logístico completo, selecionando a melhor rota, modalidade de transporte e procedimentos aduaneiros necessários.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>3. Execução</h3>
+                    <p>Gerimos todo o processo: coleta da mercadoria, documentação, embarque, transporte e desalfandegamento, mantendo você informado em cada etapa.</p>
+                </div>
+                <div class="timeline-icon">🚀</div>
+                <div class="timeline-content" style="background: transparent; box-shadow: none;"></div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content" style="background: transparent; box-shadow: none;"></div>
+                <div class="timeline-icon">📦</div>
+                <div class="timeline-content">
+                    <h3>4. Entrega</h3>
+                    <p>Realizamos a entrega final no local designado, com toda documentação necessária e confirmação de recebimento.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>5. Suporte Contínuo</h3>
+                    <p>Nossa equipa permanece disponível para suporte pós-entrega, relatórios, feedback e planeamento de futuras operações.</p>
+                </div>
+                <div class="timeline-icon">🤝</div>
+                <div class="timeline-content" style="background: transparent; box-shadow: none;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-dark">
+        <h2 class="section-title">O Que Nos Diferencia</h2>
+        <p class="section-subtitle">Agregamos valor em cada etapa do processo logístico</p>
+        <div class="value-props">
+            <div class="value-prop">
+                <div class="value-icon">💰</div>
+                <h4>Preços Competitivos</h4>
+                <p>Negociações privilegiadas com transportadoras e fornecedores garantem os melhores preços do mercado</p>
+            </div>
+            <div class="value-prop">
+                <div class="value-icon">⏱️</div>
+                <h4>Prazos Cumpridos</h4>
+                <p>Compromisso rigoroso com cronogramas estabelecidos e comunicação proativa sobre qualquer mudança</p>
+            </div>
+            <div class="value-prop">
+                <div class="value-icon">🎯</div>
+                <h4>Soluções Personalizadas</h4>
+                <p>Cada cliente é único - adaptamos nossos serviços às necessidades específicas do seu negócio</p>
+            </div>
+            <div class="value-prop">
+                <div class="value-icon">📱</div>
+                <h4>Transparência Total</h4>
+                <p>Rastreamento em tempo real e relatórios detalhados para total visibilidade das suas operações</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="locations" class="section section-alt">
+        <h2 class="section-title">Nossas Localizações</h2>
+        <p class="section-subtitle">Presença estratégica em África e Ásia para melhor servir nossos clientes</p>
+        <div class="locations-grid">
+            <div class="location-card">
+                <div class="flag">🇲🇿</div>
+                <h3>Moçambique</h3>
+                <div class="address">
+                    <strong>Sede Regional África</strong><br>
+                    Av. Josina Machel, 766<br>
+                    1º Andar, Alto Maé<br>
+                    Maputo, Moçambique
+                </div>
+                <div class="phone">📞 +258 (86) 2682260</div>
+                <p style="margin-top: 1rem; color: #666;">
+                    <strong>Horário:</strong> Seg-Sex: 8h-17h<br>
+                    <strong>Email:</strong> mozambique@zhenglogistics.com
+                </p>
+            </div>
+            <div class="location-card">
+                <div class="flag">🇨🇳</div>
+                <h3>China</h3>
+                <div class="address">
+                    <strong>Armazém & Escritório</strong><br>
+                    Room B613, Block B<br>
+                    Heng Sheng Building<br>
+                    No. 205, Huanshi Middle Road<br>
+                    Guangzhou, China
+                </div>
+                <div class="phone">📞 +86 137 1124 8068</div>
+                <p style="margin-top: 1rem; color: #666;">
+                    <strong>Horário:</strong> Seg-Sáb: 9h-18h<br>
+                    <strong>Email:</strong> china@zhenglogistics.com
+                </p>
+            </div>
+            <div class="location-card">
+                <div class="flag">🇲🇱</div>
+                <h3>Mali</h3>
+                <div class="address">
+                    <strong>Escritório Regional</strong><br>
+                    Bamako<br>
+                    Mali
+                </div>
+                <div class="phone">📞 +223 7916 4569</div>
+                <p style="margin-top: 1rem; color: #666;">
+                    <strong>Horário:</strong> Seg-Sex: 8h-17h<br>
+                    <strong>Email:</strong> mali@zhenglogistics.com
+                </p>
+            </div>
+            <div class="location-card">
+                <div class="flag">🇨🇮</div>
+                <h3>Costa do Marfim</h3>
+                <div class="address">
+                    <strong>Escritório Regional</strong><br>
+                    Abidjan<br>
+                    Costa do Marfim
+                </div>
+                <div class="phone">📞 +2250576829090</div>
+                <p style="margin-top: 1rem; color: #666;">
+                    <strong>Horário:</strong> Seg-Sex: 8h-17h<br>
+                    <strong>Email:</strong> ivorycoast@zhenglogistics.com
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="section-title" style="color: white;">Entre em Contacto</h2>
+        <p class="section-subtitle">Estamos prontos para ajudá-lo com suas necessidades logísticas. Entre em contacto através de qualquer um dos nossos canais.</p>
+        
+        <div class="contact-form-section">
+            <h3 style="text-align: center; margin-bottom: 2rem; color: #d4af37; font-size: 1.8rem;">Solicite um Orçamento</h3>
+            <form>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Nome Completo *</label>
+                        <input type="text" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Empresa</label>
+                        <input type="text" placeholder="Nome da empresa">
+                    </div>
+                    <div class="form-group">
+                        <label>Email *</label>
+                        <input type="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Telefone *</label>
+                        <input type="tel" placeholder="+258 XX XXX XXXX" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label>País</label>
+                        <select>
+                            <option value="">Selecione...</option>
+                            <option value="mz">Moçambique</option>
+                            <option value="ml">Mali</option>
+                            <option value="ci">Costa do Marfim</option>
+                            <option value="cn">China</option>
+                            <option value="other">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Serviço de Interesse</label>
+                        <select>
+                            <option value="">Selecione...</option>
+                            <option value="maritime">Transporte Marítimo</option>
+                            <option value="air">Transporte Aéreo</option>
+                            <option value="land">Transporte Terrestre</option>
+                            <option value="vehicles">Importação de Veículos</option>
+                            <option value="customs">Despacho Aduaneiro</option>
+                            <option value="warehousing">Armazenagem</option>
+                            <option value="procurement">Procurement</option>
+                            <option value="other">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Mensagem *</label>
+                        <textarea rows="5" placeholder="Descreva suas necessidades logísticas..." required></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Enviar Solicitação</button>
+            </form>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <h3>🇲🇿 Moçambique</h3>
+                <p><strong>Telefone:</strong> +258 (86) 2682260</p>
+                <p><strong>Email:</strong> mozambique@zhenglogistics.com</p>
+                <p><strong>Endereço:</strong> Av. Josina Machel, 766, 1º Andar, Alto Maé, Maputo</p>
+                <p><strong>Horário:</strong> Segunda a Sexta: 8h00 - 17h00</p>
+            </div>
+            <div class="contact-card">
+                <h3>🇨🇳 China</h3>
+                <p><strong>Telefone:</strong> +86 137 1124 8068</p>
+                <p><strong>Email:</strong> china@zhenglogistics.com</p>
+                <p><strong>Endereço:</strong> Room B613, Block B, Heng Sheng Building, Guangzhou</p>
+                <p><strong>Horário:</strong> Segunda a Sábado: 9h00 - 18h00</p>
+            </div>
+            <div class="contact-card">
+                <h3>🇲🇱 Mali</h3>
+                <p><strong>Telefone:</strong> +223 7916 4569</p>
+                <p><strong>Email:</strong> mali@zhenglogistics.com</p>
+                <p><strong>Endereço:</strong> Bamako, Mali</p>
+                <p><strong>Horário:</strong> Segunda a Sexta: 8h00 - 17h00</p>
+            </div>
+            <div class="contact-card">
+                <h3>🇨🇮 Costa do Marfim</h3>
+                <p><strong>Telefone:</strong> +2250576829090</p>
+                <p><strong>Email:</strong> ivorycoast@zhenglogistics.com</p>
+                <p><strong>Endereço:</strong> Abidjan, Costa do Marfim</p>
+                <p><strong>Horário:</strong> Segunda a Sexta: 8h00 - 17h00</p>
+            </div>
+
+
+
+            
+        </div>
+
+        <div class="social-section">
+            <h3 style="margin-bottom: 1rem; font-size: 1.8rem;">Siga-nos nas Redes Sociais</h3>
+            <p style="margin-bottom: 2rem;">Mantenha-se actualizado com as nossas últimas notícias e ofertas</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com" target="_blank" class="social-icon" title="LinkedIn">
+                    <span style="font-size: 1.5rem;">in</span>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon" title="Instagram">📷</a>
+                <a href="https://www.facebook.com" target="_blank" class="social-icon" title="Facebook">
+                    <span style="font-size: 1.5rem;">f</span>
+                </a>
+                <a href="https://wa.me/258862682260" target="_blank" class="social-icon" title="WhatsApp">💬</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Zheng Logistics</h4>
+                <p style="line-height: 1.7; color: rgba(255,255,255,0.8);">
+                    Conectando África e Ásia com excelência em soluções logísticas há mais de 10 anos. We Add Value to your business.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>Serviços</h4>
+                <ul>
+                    <li><a href="#services">Armazenagem</a></li>
+                    <li><a href="#services">Despacho Aduaneiro</a></li>
+                    <li><a href="#transport">Transporte Multimodal</a></li>
+                    <li><a href="#services">Importação de Veículos</a></li>
+                    <li><a href="#services">Procurement</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#process">Como Trabalhamos</a></li>
+                    <li><a href="#locations">Localizações</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto Rápido</h4>
+                <ul>
+                    <li>🇲🇿 +258 (86) 2682260</li>
+                    <li>🇨🇳 +86 137 1124 8068</li>
+                    <li>🇲🇱 +223 7916 4569</li>
+                    <li>✉️ info@zhenglogistics.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Zheng Logistics. Todos os direitos reservados. | We Add Value</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">Moçambique • China • Mali • Costa do Marfim</p>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+
+           // Traduções completas
+        const translations = {
+            pt: {
+                nav: {
+                    inicio: 'Início',
+                    servicos: 'Serviços',
+                    transporte: 'Transporte',
+                    sobre: 'Sobre',
+                    processo: 'Processo',
+                    localizacoes: 'Localizações',
+                    contacto: 'Contacto'
+                },
+                hero: {
+                    title: 'ZHENG LOGISTICS',
+                    tagline: 'We Add Value',
+                    desc: 'Conectando África e Ásia com Excelência em Soluções Logísticas Integradas. Transporte Marítimo, Aéreo e Terrestre. Importação de Veículos. Armazenagem Segura.',
+                    orcamento: 'Solicite um Orçamento',
+                    servicosBtn: 'Nossos Serviços',
+                    paises: 'Países',
+                    anos: 'Anos de Experiência',
+                    clientes: 'Clientes Satisfeitos',
+                    suporte: 'Suporte'
+                },
+                services: {
+                    title: 'Nossos Serviços Completos',
+                    subtitle: 'Oferecemos uma gama completa de soluções logísticas personalizadas para atender às necessidades específicas do seu negócio, garantindo eficiência, segurança e pontualidade em cada etapa.',
+                    armazenagem: {
+                        title: 'Armazenagem Profissional',
+                        desc: 'Infraestrutura moderna e segura para armazenamento de mercadorias com sistemas de gestão de inventário em tempo real.',
+                        features: [
+                            'Armazéns climatizados',
+                            'Sistema WMS avançado',
+                            'Segurança 24/7',
+                            'Gestão de stock em tempo real',
+                            'Picking e packing personalizados'
+                        ]
+                    },
+                    aduaneiro: {
+                        title: 'Despacho Aduaneiro',
+                        desc: 'Processamento ágil e eficiente de toda documentação aduaneira com conhecimento profundo das regulamentações locais.',
+                        features: [
+                            'Classificação pautal',
+                            'Regimes aduaneiros especiais',
+                            'Licenças de importação/exportação',
+                            'Consultoria fiscal',
+                            'Representação alfandegária'
+                        ]
+                    },
+                    transporte: {
+                        title: 'Transporte Multimodal',
+                        desc: 'Soluções completas de transporte terrestre com frota própria e parceiros qualificados, garantindo entregas pontuais.',
+                        features: [
+                            'Transporte dedicado',
+                            'Rastreamento GPS em tempo real',
+                            'Seguro de cargas',
+                            'Entregas urgentes',
+                            'Cross-docking'
+                        ]
+                    },
+                    procurement: {
+                        title: 'Procurement & Sourcing',
+                        desc: 'Gestão completa de compras na China e mercados internacionais, incluindo negociação, inspeção de qualidade e consolidação.',
+                        features: [
+                            'Pesquisa de fornecedores',
+                            'Negociação de preços',
+                            'Controlo de qualidade',
+                            'Consolidação de cargas',
+                            'Acompanhamento de produção'
+                        ]
+                    },
+                    transito: {
+                        title: 'Trânsito Aduaneiro',
+                        desc: 'Facilitação de trânsito internacional de mercadorias com gestão completa de documentação e procedimentos alfandegários.',
+                        features: [
+                            'Regimes de trânsito',
+                            'Garantias bancárias',
+                            'Acompanhamento 24/7',
+                            'Corredores internacionais',
+                            'Gestão de fronteiras'
+                        ]
+                    },
+                    importacao: {
+                        title: 'Importação & Exportação',
+                        desc: 'Serviços completos de comércio exterior com expertise em mercados africanos e asiáticos, facilitando o seu negócio global.',
+                        features: [
+                            'Consultoria de comércio',
+                            'Documentação completa',
+                            'Certificados de origem',
+                            'Pagamentos internacionais',
+                            'Compliance regulatório'
+                        ]
+                    },
+                    veiculos: {
+                        title: 'Importação de Veículos',
+                        desc: 'Especialistas em importação de veículos novos e usados da China, Europa e outros mercados com processo simplificado.',
+                        features: [
+                            'Veículos novos e usados',
+                            'Inspeção pré-embarque',
+                            'Documentação completa',
+                            'Seguro internacional',
+                            'Entrega porta a porta'
+                        ]
+                    },
+                    consultoria: {
+                        title: 'Consultoria Logística',
+                        desc: 'Análise e otimização da sua cadeia de abastecimento para reduzir custos e aumentar a eficiência operacional.',
+                        features: [
+                            'Auditoria logística',
+                            'Otimização de rotas',
+                            'Redução de custos',
+                            'Planeamento estratégico',
+                            'Gestão de KPIs'
+                        ]
+                    }
+                },
+                transport: {
+                    title: 'Modalidades de Transporte',
+                    subtitle: 'Oferecemos soluções completas de transporte marítimo, aéreo e terrestre, adaptadas às necessidades específicas da sua carga e prazos.',
+                    maritimo: {
+                        title: 'Transporte Marítimo',
+                        fcl: 'Carga FCL (Container Completo)',
+                        fclItems: [
+                            'Containers 20\' e 40\'',
+                            'High Cube disponível',
+                            'Consolidação de cargas'
+                        ],
+                        lcl: 'Carga LCL (Carga Fracionada)',
+                        lclItems: [
+                            'Consolidação semanal',
+                            'Armazenagem incluída',
+                            'Flexibilidade de volumes'
+                        ],
+                        rotas: 'Rotas Principais: China → Moçambique, China → Costa do Marfim, China → Mali'
+                    },
+                    aereo: {
+                        title: 'Transporte Aéreo',
+                        expresso: 'Carga Aérea Express',
+                        expressoItems: [
+                            'Entregas em 3-5 dias',
+                            'Ideal para urgências',
+                            'Mercadorias de alto valor'
+                        ],
+                        standard: 'Carga Aérea Standard',
+                        standardItems: [
+                            'Entregas em 7-10 dias',
+                            'Melhor custo-benefício',
+                            'Rastreamento completo'
+                        ],
+                        especialidades: 'Especialidades: Produtos perecíveis, eletrónicos, documentos importantes, amostras'
+                    },
+                    terrestre: {
+                        title: 'Transporte Terrestre',
+                        nacional: 'Distribuição Nacional',
+                        nacionalItems: [
+                            'Entregas em todo Moçambique',
+                            'Frota própria e parceiros',
+                            'Cargas fracionadas e completas'
+                        ],
+                        regional: 'Transporte Regional',
+                        regionalItems: [
+                            'Corredores SADC',
+                            'África Ocidental',
+                            'Cross-border expertise'
+                        ],
+                        veiculos: 'Veículos: Camiões de 3 a 30 toneladas, carretas, veículos refrigerados'
+                    },
+                    importVeiculos: {
+                        title: 'Importação de Veículos',
+                        leves: 'Veículos Ligeiros',
+                        levesItems: [
+                            'Carros de passeio',
+                            'SUVs e Pick-ups',
+                            'Vans comerciais'
+                        ],
+                        pesados: 'Veículos Pesados',
+                        pesadosItems: [
+                            'Camiões e autocarros',
+                            'Máquinas de construção',
+                            'Tratores agrícolas'
+                        ],
+                        processo: 'Processo Completo: Compra, inspeção, embarque, desalfandegamento e entrega'
+                    }
+                },
+                about: {
+                    title: 'Sobre a Zheng Logistics',
+                    subtitle: 'Somos uma empresa líder em soluções logísticas integradas, construindo pontes comerciais entre África e Ásia há mais de uma década.',
+                    missao: {
+                        title: 'Nossa Missão',
+                        desc: 'Facilitar o comércio internacional através de soluções logísticas inovadoras, eficientes e personalizadas, agregando valor real aos negócios dos nossos clientes e contribuindo para o desenvolvimento económico das regiões onde operamos.'
+                    },
+                    visao: {
+                        title: 'Nossa Visão',
+                        desc: 'Ser a empresa de logística mais confiável e preferida na conexão entre África e Ásia, reconhecida pela excelência operacional, inovação tecnológica e compromisso com a sustentabilidade.'
+                    },
+                    valores: {
+                        title: 'Nossos Valores',
+                        desc: 'Integridade, Excelência, Inovação, Compromisso com o Cliente, Trabalho em Equipa, Responsabilidade Social e Ambiental. Estes valores guiam todas as nossas decisões e ações diárias.'
+                    },
+                    porqueeescolher: 'Porque Escolher a Zheng Logistics?',
+                    presenca: {
+                        title: 'Presença Internacional',
+                        desc: 'Escritórios estratégicos em 4 países (Moçambique, China, Mali e Costa do Marfim) garantem suporte local e conhecimento profundo dos mercados.'
+                    },
+                    agilidade: {
+                        title: 'Agilidade & Eficiência',
+                        desc: 'Processos otimizados e tecnologia de ponta para garantir prazos reduzidos e custos competitivos em todas as operações.'
+                    },
+                    seguranca: {
+                        title: 'Segurança Garantida',
+                        desc: 'Seguros abrangentes, rastreamento em tempo real e procedimentos rigorosos de manuseamento para proteger as suas mercadorias.'
+                    },
+                    equipa: {
+                        title: 'Equipa Experiente',
+                        desc: 'Profissionais qualificados com vasta experiência em logística internacional, alfândegas e comércio exterior.'
+                    },
+                    tecnologia: {
+                        title: 'Tecnologia Avançada',
+                        desc: 'Sistemas de gestão modernos que permitem rastreamento em tempo real, relatórios detalhados e transparência total nas operações.'
+                    },
+                    parceria: {
+                        title: 'Parceria de Confiança',
+                        desc: 'Relacionamento de longo prazo com clientes, baseado em transparência, comunicação clara e compromisso com resultados.'
+                    }
+                },
+                process: {
+                    title: 'Como Trabalhamos',
+                    subtitle: 'Nosso processo simplificado garante uma experiência sem complicações do início ao fim da sua operação logística.',
+                    consulta: {
+                        title: '1. Consulta Inicial',
+                        desc: 'Entre em contacto connosco através de qualquer canal. Nossa equipa analisa suas necessidades e fornece uma proposta personalizada com prazo e orçamento detalhados.'
+                    },
+                    planeamento: {
+                        title: '2. Planeamento',
+                        desc: 'Desenvolvemos um plano logístico completo, selecionando a melhor rota, modalidade de transporte e procedimentos aduaneiros necessários.'
+                    },
+                    execucao: {
+                        title: '3. Execução',
+                        desc: 'Gerimos todo o processo: coleta da mercadoria, documentação, embarque, transporte e desalfandegamento, mantendo você informado em cada etapa.'
+                    },
+                    entrega: {
+                        title: '4. Entrega',
+                        desc: 'Realizamos a entrega final no local designado, com toda documentação necessária e confirmação de recebimento.'
+                    },
+                    suporte: {
+                        title: '5. Suporte Contínuo',
+                        desc: 'Nossa equipa permanece disponível para suporte pós-entrega, relatórios, feedback e planeamento de futuras operações.'
+                    }
+                },
+                valores: {
+                    title: 'O Que Nos Diferencia',
+                    subtitle: 'Agregamos valor em cada etapa do processo logístico',
+                    precos: {
+                        title: 'Preços Competitivos',
+                        desc: 'Negociações privilegiadas com transportadoras e fornecedores garantem os melhores preços do mercado'
+                    },
+                    prazos: {
+                        title: 'Prazos Cumpridos',
+                        desc: 'Compromisso rigoroso com cronogramas estabelecidos e comunicação proativa sobre qualquer mudança'
+                    },
+                    solucoes: {
+                        title: 'Soluções Personalizadas',
+                        desc: 'Cada cliente é único - adaptamos nossos serviços às necessidades específicas do seu negócio'
+                    },
+                    transparencia: {
+                        title: 'Transparência Total',
+                        desc: 'Rastreamento em tempo real e relatórios detalhados para total visibilidade das suas operações'
+                    }
+                },
+                locations: {
+                    title: 'Nossas Localizações',
+                    subtitle: 'Presença estratégica em África e Ásia para melhor servir nossos clientes',
+                    mocambique: {
+                        title: 'Moçambique',
+                        endereco: 'Sede Regional África\nAv. Josina Machel, 766\n1º Andar, Alto Maé\nMaputo, Moçambique',
+                        telefone: '+258 (86) 2682260',
+                        horario: 'Seg-Sex: 8h-17h',
+                        email: 'mozambique@zhenglogistics.com'
+                    },
+                    china: {
+                        title: 'China',
+                        endereco: 'Armazém & Escritório\nRoom B613, Block B\nHeng Sheng Building\nNo. 205, Huanshi Middle Road\nGuangzhou, China',
+                        telefone: '+86 137 1124 8068',
+                        horario: 'Seg-Sáb: 9h-18h',
+                        email: 'china@zhenglogistics.com'
+                    },
+                    mali: {
+                        title: 'Mali',
+                        endereco: 'Escritório Regional\nBamako\nMali',
+                        telefone: '+223 7916 4569',
+                        horario: 'Seg-Sex: 8h-17h',
+                        email: 'mali@zhenglogistics.com'
+                    },
+                    cotedivoire: {
+                        title: 'Costa do Marfim',
+                        endereco: 'Escritório Regional\nAbidjan\nCosta do Marfim',
+                        telefone: '+2250576829090',
+                        horario: 'Seg-Sáb: 9h-18h',
+                        email: 'ivorycoast@zhenglogistics.com'
+                    }
+                },
+                contact: {
+                    title: 'Entre em Contacto',
+                    subtitle: 'Estamos prontos para ajudá-lo com suas necessidades logísticas. Entre em contacto através de qualquer um dos nossos canais.',
+                    orcamento: 'Solicite um Orçamento',
+                    form: {
+                        nome: 'Nome Completo *',
+                        empresa: 'Empresa',
+                        email: 'Email *',
+                        telefone: 'Telefone *',
+                        pais: 'País',
+                        servico: 'Serviço de Interesse',
+                        mensagem: 'Mensagem *',
+                        enviar: 'Enviar Solicitação',
+                        placeholder: {
+                            nome: 'Seu nome',
+                            empresa: 'Nome da empresa',
+                            email: 'seu@email.com',
+                            telefone: '+258 XX XXX XXXX',
+                            pais: 'Selecione...',
+                            servico: 'Selecione...',
+                            mensagem: 'Descreva suas necessidades logísticas...'
+                        },
+                        opcoesPais: {
+                            mz: 'Moçambique',
+                            ml: 'Mali',
+                            ci: 'Costa do Marfim',
+                            cn: 'China',
+                            other: 'Outro'
+                        },
+                        opcoesServico: {
+                            maritime: 'Transporte Marítimo',
+                            air: 'Transporte Aéreo',
+                            land: 'Transporte Terrestre',
+                            vehicles: 'Importação de Veículos',
+                            customs: 'Despacho Aduaneiro',
+                            warehousing: 'Armazenagem',
+                            procurement: 'Procurement',
+                            other: 'Outro'
+                        }
+                    },
+                    redesSociais: 'Siga-nos nas Redes Sociais',
+                    redesDesc: 'Mantenha-se actualizado com as nossas últimas notícias e ofertas'
+                },
+                footer: {
+                    descricao: 'Conectando África e Ásia com excelência em soluções logísticas há mais de 10 anos. We Add Value to your business.',
+                    servicos: 'Serviços',
+                    empresa: 'Empresa',
+                    contactRapido: 'Contacto Rápido',
+                    direitos: 'Todos os direitos reservados',
+                    copyright: '© 2026 Zheng Logistics. Todos os direitos reservados. | We Add Value',
+                    locais: 'Moçambique • China • Mali • Costa do Marfim'
+                }
+            },
+            en: {
+                nav: {
+                    inicio: 'Home',
+                    servicos: 'Services',
+                    transporte: 'Transport',
+                    sobre: 'About',
+                    processo: 'Process',
+                    localizacoes: 'Locations',
+                    contacto: 'Contact'
+                },
+                hero: {
+                    title: 'ZHENG LOGISTICS',
+                    tagline: 'We Add Value',
+                    desc: 'Connecting Africa and Asia with Excellence in Integrated Logistics Solutions. Maritime, Air and Land Transport. Vehicle Imports. Secure Warehousing.',
+                    orcamento: 'Request a Quote',
+                    servicosBtn: 'Our Services',
+                    paises: 'Countries',
+                    anos: 'Years of Experience',
+                    clientes: 'Satisfied Clients',
+                    suporte: 'Support'
+                },
+                services: {
+                    title: 'Our Complete Services',
+                    subtitle: 'We offer a complete range of customized logistics solutions to meet your specific business needs, ensuring efficiency, safety, and punctuality at every stage.',
+                    armazenagem: {
+                        title: 'Professional Warehousing',
+                        desc: 'Modern and secure infrastructure for goods storage with real-time inventory management systems.',
+                        features: [
+                            'Climate-controlled warehouses',
+                            'Advanced WMS system',
+                            '24/7 security',
+                            'Real-time stock management',
+                            'Customized picking and packing'
+                        ]
+                    },
+                    aduaneiro: {
+                        title: 'Customs Clearance',
+                        desc: 'Agile and efficient processing of all customs documentation with deep knowledge of local regulations.',
+                        features: [
+                            'Tariff classification',
+                            'Special customs regimes',
+                            'Import/export licenses',
+                            'Tax consultancy',
+                            'Customs representation'
+                        ]
+                    },
+                    transporte: {
+                        title: 'Multimodal Transport',
+                        desc: 'Complete land transport solutions with own fleet and qualified partners, ensuring timely deliveries.',
+                        features: [
+                            'Dedicated transport',
+                            'Real-time GPS tracking',
+                            'Cargo insurance',
+                            'Urgent deliveries',
+                            'Cross-docking'
+                        ]
+                    },
+                    procurement: {
+                        title: 'Procurement & Sourcing',
+                        desc: 'Complete purchasing management in China and international markets, including negotiation, quality inspection and consolidation.',
+                        features: [
+                            'Supplier research',
+                            'Price negotiation',
+                            'Quality control',
+                            'Cargo consolidation',
+                            'Production monitoring'
+                        ]
+                    },
+                    transito: {
+                        title: 'Customs Transit',
+                        desc: 'Facilitation of international goods transit with complete documentation management and customs procedures.',
+                        features: [
+                            'Transit regimes',
+                            'Bank guarantees',
+                            '24/7 monitoring',
+                            'International corridors',
+                            'Border management'
+                        ]
+                    },
+                    importacao: {
+                        title: 'Import & Export',
+                        desc: 'Complete foreign trade services with expertise in African and Asian markets, facilitating your global business.',
+                        features: [
+                            'Trade consultancy',
+                            'Complete documentation',
+                            'Certificates of origin',
+                            'International payments',
+                            'Regulatory compliance'
+                        ]
+                    },
+                    veiculos: {
+                        title: 'Vehicle Import',
+                        desc: 'Specialists in import of new and used vehicles from China, Europe and other markets with simplified process.',
+                        features: [
+                            'New and used vehicles',
+                            'Pre-shipment inspection',
+                            'Complete documentation',
+                            'International insurance',
+                            'Door to door delivery'
+                        ]
+                    },
+                    consultoria: {
+                        title: 'Logistics Consulting',
+                        desc: 'Analysis and optimization of your supply chain to reduce costs and increase operational efficiency.',
+                        features: [
+                            'Logistics audit',
+                            'Route optimization',
+                            'Cost reduction',
+                            'Strategic planning',
+                            'KPI management'
+                        ]
+                    }
+                },
+                transport: {
+                    title: 'Transport Modes',
+                    subtitle: 'We offer complete maritime, air and land transport solutions, adapted to the specific needs of your cargo and deadlines.',
+                    maritimo: {
+                        title: 'Maritime Transport',
+                        fcl: 'FCL Cargo (Full Container Load)',
+                        fclItems: [
+                            '20\' and 40\' containers',
+                            'High Cube available',
+                            'Cargo consolidation'
+                        ],
+                        lcl: 'LCL Cargo (Less than Container Load)',
+                        lclItems: [
+                            'Weekly consolidation',
+                            'Warehousing included',
+                            'Volume flexibility'
+                        ],
+                        rotas: 'Main Routes: China → Mozambique, China → Ivory Coast, China → Mali'
+                    },
+                    aereo: {
+                        title: 'Air Transport',
+                        expresso: 'Express Air Cargo',
+                        expressoItems: [
+                            '3-5 day deliveries',
+                            'Ideal for emergencies',
+                            'High-value goods'
+                        ],
+                        standard: 'Standard Air Cargo',
+                        standardItems: [
+                            '7-10 day deliveries',
+                            'Best cost-benefit',
+                            'Complete tracking'
+                        ],
+                        especialidades: 'Specialties: Perishable products, electronics, important documents, samples'
+                    },
+                    terrestre: {
+                        title: 'Land Transport',
+                        nacional: 'National Distribution',
+                        nacionalItems: [
+                            'Deliveries throughout Mozambique',
+                            'Own fleet and partners',
+                            'Fractional and full loads'
+                        ],
+                        regional: 'Regional Transport',
+                        regionalItems: [
+                            'SADC corridors',
+                            'West Africa',
+                            'Cross-border expertise'
+                        ],
+                        veiculos: 'Vehicles: 3 to 30 ton trucks, trailers, refrigerated vehicles'
+                    },
+                    importVeiculos: {
+                        title: 'Vehicle Import',
+                        leves: 'Light Vehicles',
+                        levesItems: [
+                            'Passenger cars',
+                            'SUVs and Pick-ups',
+                            'Commercial vans'
+                        ],
+                        pesados: 'Heavy Vehicles',
+                        pesadosItems: [
+                            'Trucks and buses',
+                            'Construction machinery',
+                            'Agricultural tractors'
+                        ],
+                        processo: 'Complete Process: Purchase, inspection, shipping, customs clearance and delivery'
+                    }
+                },
+                about: {
+                    title: 'About Zheng Logistics',
+                    subtitle: 'We are a leading company in integrated logistics solutions, building commercial bridges between Africa and Asia for over a decade.',
+                    missao: {
+                        title: 'Our Mission',
+                        desc: 'Facilitate international trade through innovative, efficient and customized logistics solutions, adding real value to our clients\' businesses and contributing to the economic development of the regions where we operate.'
+                    },
+                    visao: {
+                        title: 'Our Vision',
+                        desc: 'To be the most reliable and preferred logistics company in the connection between Africa and Asia, recognized for operational excellence, technological innovation and commitment to sustainability.'
+                    },
+                    valores: {
+                        title: 'Our Values',
+                        desc: 'Integrity, Excellence, Innovation, Customer Commitment, Teamwork, Social and Environmental Responsibility. These values guide all our daily decisions and actions.'
+                    },
+                    porqueeescolher: 'Why Choose Zheng Logistics?',
+                    presenca: {
+                        title: 'International Presence',
+                        desc: 'Strategic offices in 4 countries (Mozambique, China, Mali and Ivory Coast) ensure local support and deep market knowledge.'
+                    },
+                    agilidade: {
+                        title: 'Agility & Efficiency',
+                        desc: 'Optimized processes and cutting-edge technology to ensure reduced deadlines and competitive costs in all operations.'
+                    },
+                    seguranca: {
+                        title: 'Guaranteed Security',
+                        desc: 'Comprehensive insurance, real-time tracking and rigorous handling procedures to protect your goods.'
+                    },
+                    equipa: {
+                        title: 'Experienced Team',
+                        desc: 'Qualified professionals with extensive experience in international logistics, customs and foreign trade.'
+                    },
+                    tecnologia: {
+                        title: 'Advanced Technology',
+                        desc: 'Modern management systems that allow real-time tracking, detailed reports and total transparency in operations.'
+                    },
+                    parceria: {
+                        title: 'Trust Partnership',
+                        desc: 'Long-term relationship with clients, based on transparency, clear communication and commitment to results.'
+                    }
+                },
+                process: {
+                    title: 'How We Work',
+                    subtitle: 'Our simplified process ensures a hassle-free experience from start to finish of your logistics operation.',
+                    consulta: {
+                        title: '1. Initial Consultation',
+                        desc: 'Contact us through any channel. Our team analyzes your needs and provides a personalized proposal with detailed timeline and budget.'
+                    },
+                    planeamento: {
+                        title: '2. Planning',
+                        desc: 'We develop a complete logistics plan, selecting the best route, transport mode and necessary customs procedures.'
+                    },
+                    execucao: {
+                        title: '3. Execution',
+                        desc: 'We manage the entire process: goods collection, documentation, shipping, transport and customs clearance, keeping you informed at every step.'
+                    },
+                    entrega: {
+                        title: '4. Delivery',
+                        desc: 'We perform final delivery at the designated location, with all necessary documentation and confirmation of receipt.'
+                    },
+                    suporte: {
+                        title: '5. Continuous Support',
+                        desc: 'Our team remains available for post-delivery support, reports, feedback and planning of future operations.'
+                    }
+                },
+                valores: {
+                    title: 'What Differentiates Us',
+                    subtitle: 'We add value at every stage of the logistics process',
+                    precos: {
+                        title: 'Competitive Prices',
+                        desc: 'Privileged negotiations with carriers and suppliers ensure the best market prices'
+                    },
+                    prazos: {
+                        title: 'Met Deadlines',
+                        desc: 'Rigorous commitment to established schedules and proactive communication about any changes'
+                    },
+                    solucoes: {
+                        title: 'Customized Solutions',
+                        desc: 'Each client is unique - we adapt our services to the specific needs of your business'
+                    },
+                    transparencia: {
+                        title: 'Total Transparency',
+                        desc: 'Real-time tracking and detailed reports for total visibility of your operations'
+                    }
+                },
+                locations: {
+                    title: 'Our Locations',
+                    subtitle: 'Strategic presence in Africa and Asia to better serve our clients',
+                    mocambique: {
+                        title: 'Mozambique',
+                        endereco: 'Regional Headquarters Africa\nAv. Josina Machel, 766\n1st Floor, Alto Maé\nMaputo, Mozambique',
+                        telefone: '+258 (86) 2682260',
+                        horario: 'Mon-Fri: 8am-5pm',
+                        email: 'mozambique@zhenglogistics.com'
+                    },
+                    china: {
+                        title: 'China',
+                        endereco: 'Warehouse & Office\nRoom B613, Block B\nHeng Sheng Building\nNo. 205, Huanshi Middle Road\nGuangzhou, China',
+                        telefone: '+86 137 1124 8068',
+                        horario: 'Mon-Sat: 9am-6pm',
+                        email: 'china@zhenglogistics.com'
+                    },
+                    mali: {
+                        title: 'Mali',
+                        endereco: 'Regional Office\nBamako\nMali',
+                        telefone: '+223 7916 4569',
+                        horario: 'Mon-Fri: 8am-5pm',
+                        email: 'mali@zhenglogistics.com'
+                    },
+                    cotedivoire: {
+                        title: 'Ivory Coast',
+                        endereco: 'Regional Office\nAbidjan\nIvory Coast',
+                        telefone: 'Coming soon',
+                        status: 'Under development',
+                        email: 'ivorycoast@zhenglogistics.com'
+                    }
+                },
+                contact: {
+                    title: 'Contact Us',
+                    subtitle: 'We are ready to help you with your logistics needs. Contact us through any of our channels.',
+                    orcamento: 'Request a Quote',
+                    form: {
+                        nome: 'Full Name *',
+                        empresa: 'Company',
+                        email: 'Email *',
+                        telefone: 'Phone *',
+                        pais: 'Country',
+                        servico: 'Service of Interest',
+                        mensagem: 'Message *',
+                        enviar: 'Send Request',
+                        placeholder: {
+                            nome: 'Your name',
+                            empresa: 'Company name',
+                            email: 'your@email.com',
+                            telefone: '+258 XX XXX XXXX',
+                            pais: 'Select...',
+                            servico: 'Select...',
+                            mensagem: 'Describe your logistics needs...'
+                        },
+                        opcoesPais: {
+                            mz: 'Mozambique',
+                            ml: 'Mali',
+                            ci: 'Ivory Coast',
+                            cn: 'China',
+                            other: 'Other'
+                        },
+                        opcoesServico: {
+                            maritime: 'Maritime Transport',
+                            air: 'Air Transport',
+                            land: 'Land Transport',
+                            vehicles: 'Vehicle Import',
+                            customs: 'Customs Clearance',
+                            warehousing: 'Warehousing',
+                            procurement: 'Procurement',
+                            other: 'Other'
+                        }
+                    },
+                    redesSociais: 'Follow us on Social Media',
+                    redesDesc: 'Stay updated with our latest news and offers'
+                },
+                footer: {
+                    descricao: 'Connecting Africa and Asia with excellence in logistics solutions for over 10 years. We Add Value to your business.',
+                    servicos: 'Services',
+                    empresa: 'Company',
+                    contactRapido: 'Quick Contact',
+                    direitos: 'All rights reserved',
+                    copyright: '© 2026 Zheng Logistics. All rights reserved. | We Add Value',
+                    locais: 'Mozambique • China • Mali • Ivory Coast'
+                }
+            },
+            fr: {
+                nav: {
+                    inicio: 'Accueil',
+                    servicos: 'Services',
+                    transporte: 'Transport',
+                    sobre: 'À Propos',
+                    processo: 'Processus',
+                    localizacoes: 'Emplacements',
+                    contacto: 'Contact'
+                },
+                hero: {
+                    title: 'ZHENG LOGISTICS',
+                    tagline: 'We Add Value',
+                    desc: 'Connecter l\'Afrique et l\'Asie avec Excellence dans les Solutions Logistiques Intégrées. Transport Maritime, Aérien et Terrestre. Importation de Véhicules. Entreposage Sécurisé.',
+                    orcamento: 'Demander un Devis',
+                    servicosBtn: 'Nos Services',
+                    paises: 'Pays',
+                    anos: 'Années d\'Expérience',
+                    clientes: 'Clients Satisfaits',
+                    suporte: 'Support'
+                },
+                services: {
+                    title: 'Nos Services Complets',
+                    subtitle: 'Nous offrons une gamme complète de solutions logistiques personnalisées pour répondre aux besoins spécifiques de votre entreprise, garantissant efficacité, sécurité et ponctualité à chaque étape.',
+                    armazenagem: {
+                        title: 'Entreposage Professionnel',
+                        desc: 'Infrastructure moderne et sécurisée pour le stockage des marchandises avec systèmes de gestion d\'inventaire en temps réel.',
+                        features: [
+                            'Entrepôts climatisés',
+                            'Système WMS avancé',
+                            'Sécurité 24/7',
+                            'Gestion de stock en temps réel',
+                            'Préparation personnalisée'
+                        ]
+                    },
+                    aduaneiro: {
+                        title: 'Dédouanement',
+                        desc: 'Traitement agile et efficace de toute la documentation douanière avec une connaissance approfondie des réglementations locales.',
+                        features: [
+                            'Classification tarifaire',
+                            'Régimes douaniers spéciaux',
+                            'Licences d\'importation/exportation',
+                            'Conseil fiscal',
+                            'Représentation douanière'
+                        ]
+                    },
+                    transporte: {
+                        title: 'Transport Multimodal',
+                        desc: 'Solutions complètes de transport terrestre avec flotte propre et partenaires qualifiés, garantissant des livraisons ponctuelles.',
+                        features: [
+                            'Transport dédié',
+                            'Suivi GPS en temps réel',
+                            'Assurance des cargaisons',
+                            'Livraisons urgentes',
+                            'Cross-docking'
+                        ]
+                    },
+                    procurement: {
+                        title: 'Achats & Approvisionnement',
+                        desc: 'Gestion complète des achats en Chine et sur les marchés internationaux, incluant négociation, inspection qualité et consolidation.',
+                        features: [
+                            'Recherche de fournisseurs',
+                            'Négociation des prix',
+                            'Contrôle qualité',
+                            'Consolidation des cargaisons',
+                            'Suivi de production'
+                        ]
+                    },
+                    transito: {
+                        title: 'Transit Douanier',
+                        desc: 'Facilitation du transit international de marchandises avec gestion complète de la documentation et des procédures douanières.',
+                        features: [
+                            'Régimes de transit',
+                            'Garanties bancaires',
+                            'Suivi 24/7',
+                            'Couloirs internationaux',
+                            'Gestion des frontières'
+                        ]
+                    },
+                    importacao: {
+                        title: 'Importation & Exportation',
+                        desc: 'Services complets de commerce extérieur avec expertise des marchés africains et asiatiques, facilitant votre activité mondiale.',
+                        features: [
+                            'Conseil en commerce',
+                            'Documentation complète',
+                            'Certificats d\'origine',
+                            'Paiements internationaux',
+                            'Conformité réglementaire'
+                        ]
+                    },
+                    veiculos: {
+                        title: 'Importation de Véhicules',
+                        desc: 'Spécialistes en importation de véhicules neufs et d\'occasion de Chine, Europe et autres marchés avec processus simplifié.',
+                        features: [
+                            'Véhicules neufs et d\'occasion',
+                            'Inspection pré-embarquement',
+                            'Documentation complète',
+                            'Assurance internationale',
+                            'Livraison porte à porte'
+                        ]
+                    },
+                    consultoria: {
+                        title: 'Conseil en Logistique',
+                        desc: 'Analyse et optimisation de votre chaîne d\'approvisionnement pour réduire les coûts et augmenter l\'efficacité opérationnelle.',
+                        features: [
+                            'Audit logistique',
+                            'Optimisation des routes',
+                            'Réduction des coûts',
+                            'Planification stratégique',
+                            'Gestion des KPI'
+                        ]
+                    }
+                },
+                transport: {
+                    title: 'Modes de Transport',
+                    subtitle: 'Nous offrons des solutions complètes de transport maritime, aérien et terrestre, adaptées aux besoins spécifiques de votre cargaison et délais.',
+                    maritimo: {
+                        title: 'Transport Maritime',
+                        fcl: 'Cargaison FCL (Conteneur Complet)',
+                        fclItems: [
+                            'Conteneurs 20\' et 40\'',
+                            'High Cube disponible',
+                            'Consolidation des cargaisons'
+                        ],
+                        lcl: 'Cargaison LCL (Moins d\'un Conteneur)',
+                        lclItems: [
+                            'Consolidation hebdomadaire',
+                            'Entreposage inclus',
+                            'Flexibilité des volumes'
+                        ],
+                        rotas: 'Routes Principales: Chine → Mozambique, Chine → Côte d\'Ivoire, Chine → Mali'
+                    },
+                    aereo: {
+                        title: 'Transport Aérien',
+                        expresso: 'Fret Aérien Express',
+                        expressoItems: [
+                            'Livraisons en 3-5 jours',
+                            'Idéal pour urgences',
+                            'Marchandises de haute valeur'
+                        ],
+                        standard: 'Fret Aérien Standard',
+                        standardItems: [
+                            'Livraisons en 7-10 jours',
+                            'Meilleur rapport qualité-prix',
+                            'Suivi complet'
+                        ],
+                        especialidades: 'Spécialités: Produits périssables, électronique, documents importants, échantillons'
+                    },
+                    terrestre: {
+                        title: 'Transport Terrestre',
+                        nacional: 'Distribution Nationale',
+                        nacionalItems: [
+                            'Livraisons partout au Mozambique',
+                            'Flotte propre et partenaires',
+                            'Cargaisons fractionnées et complètes'
+                        ],
+                        regional: 'Transport Régional',
+                        regionalItems: [
+                            'Couloirs SADC',
+                            'Afrique de l\'Ouest',
+                            'Expertise transfrontalière'
+                        ],
+                        veiculos: 'Véhicules: Camions de 3 à 30 tonnes, remorques, véhicules réfrigérés'
+                    },
+                    importVeiculos: {
+                        title: 'Importation de Véhicules',
+                        leves: 'Véhicules Légers',
+                        levesItems: [
+                            'Voitures particulières',
+                            'SUV et Pick-ups',
+                            'Fourgonnettes commerciales'
+                        ],
+                        pesados: 'Véhicules Lourds',
+                        pesadosItems: [
+                            'Camions et bus',
+                            'Machines de construction',
+                            'Tracteurs agricoles'
+                        ],
+                        processo: 'Processus Complet: Achat, inspection, expédition, dédouanement et livraison'
+                    }
+                },
+                about: {
+                    title: 'À Propos de Zheng Logistics',
+                    subtitle: 'Nous sommes une entreprise leader en solutions logistiques intégrées, construisant des ponts commerciaux entre l\'Afrique et l\'Asie depuis plus d\'une décennie.',
+                    missao: {
+                        title: 'Notre Mission',
+                        desc: 'Faciliter le commerce international grâce à des solutions logistiques innovantes, efficaces et personnalisées, ajoutant une valeur réelle aux entreprises de nos clients et contribuant au développement économique des régions où nous opérons.'
+                    },
+                    visao: {
+                        title: 'Notre Vision',
+                        desc: 'Être l\'entreprise de logistique la plus fiable et préférée dans la connexion entre l\'Afrique et l\'Asie, reconnue pour l\'excellence opérationnelle, l\'innovation technologique et l\'engagement envers la durabilité.'
+                    },
+                    valores: {
+                        title: 'Nos Valeurs',
+                        desc: 'Intégrité, Excellence, Innovation, Engagement Client, Travail d\'Équipe, Responsabilité Sociale et Environnementale. Ces valeurs guident toutes nos décisions et actions quotidiennes.'
+                    },
+                    porqueeescolher: 'Pourquoi Choisir Zheng Logistics?',
+                    presenca: {
+                        title: 'Présence Internationale',
+                        desc: 'Bureaux stratégiques dans 4 pays (Mozambique, Chine, Mali et Côte d\'Ivoire) garantissent un support local et une connaissance approfondie des marchés.'
+                    },
+                    agilidade: {
+                        title: 'Agilité & Efficacité',
+                        desc: 'Processus optimisés et technologie de pointe pour garantir des délais réduits et des coûts compétitifs dans toutes les opérations.'
+                    },
+                    seguranca: {
+                        title: 'Sécurité Garantie',
+                        desc: 'Assurances complètes, suivi en temps réel et procédures rigoureuses de manutention pour protéger vos marchandises.'
+                    },
+                    equipa: {
+                        title: 'Équipe Expérimentée',
+                        desc: 'Professionnels qualifiés avec une vaste expérience en logistique internationale, douanes et commerce extérieur.'
+                    },
+                    tecnologia: {
+                        title: 'Technologie Avancée',
+                        desc: 'Systèmes de gestion modernes permettant un suivi en temps réel, des rapports détaillés et une transparence totale dans les opérations.'
+                    },
+                    parceria: {
+                        title: 'Partenariat de Confiance',
+                        desc: 'Relation à long terme avec les clients, basée sur la transparence, une communication claire et l\'engagement envers les résultats.'
+                    }
+                },
+                process: {
+                    title: 'Comment Nous Travaillons',
+                    subtitle: 'Notre processus simplifié garantit une expérience sans complications du début à la fin de votre opération logistique.',
+                    consulta: {
+                        title: '1. Consultation Initiale',
+                        desc: 'Contactez-nous par n\'importe quel canal. Notre équipe analyse vos besoins et fournit une proposition personnalisée avec délai et budget détaillés.'
+                    },
+                    planeamento: {
+                        title: '2. Planification',
+                        desc: 'Nous développons un plan logistique complet, sélectionnant la meilleure route, modalité de transport et procédures douanières nécessaires.'
+                    },
+                    execucao: {
+                        title: '3. Exécution',
+                        desc: 'Nous gérons tout le processus: collecte des marchandises, documentation, embarquement, transport et dédouanement, en vous tenant informé à chaque étape.'
+                    },
+                    entrega: {
+                        title: '4. Livraison',
+                        desc: 'Nous effectuons la livraison finale au lieu désigné, avec toute la documentation nécessaire et confirmation de réception.'
+                    },
+                    suporte: {
+                        title: '5. Support Continu',
+                        desc: 'Notre équipe reste disponible pour le support post-livraison, rapports, feedback et planification des opérations futures.'
+                    }
+                },
+                valores: {
+                    title: 'Ce Qui Nous Différencie',
+                    subtitle: 'Nous ajoutons de la valeur à chaque étape du processus logistique',
+                    precos: {
+                        title: 'Prix Compétitifs',
+                        desc: 'Négociations privilégiées avec transporteurs et fournisseurs garantissent les meilleurs prix du marché'
+                    },
+                    prazos: {
+                        title: 'Délais Respectés',
+                        desc: 'Engagement rigoureux envers les calendriers établis et communication proactive sur tout changement'
+                    },
+                    solucoes: {
+                        title: 'Solutions Personnalisées',
+                        desc: 'Chaque client est unique - nous adaptons nos services aux besoins spécifiques de votre entreprise'
+                    },
+                    transparencia: {
+                        title: 'Transparence Totale',
+                        desc: 'Suivi en temps réel et rapports détaillés pour une visibilité totale de vos opérations'
+                    }
+                },
+                locations: {
+                    title: 'Nos Emplacements',
+                    subtitle: 'Présence stratégique en Afrique et en Asie pour mieux servir nos clients',
+                    mocambique: {
+                        title: 'Mozambique',
+                        endereco: 'Siège Régional Afrique\nAv. Josina Machel, 766\n1er Étage, Alto Maé\nMaputo, Mozambique',
+                        telefone: '+258 (86) 2682260',
+                        horario: 'Lun-Ven: 8h-17h',
+                        email: 'mozambique@zhenglogistics.com'
+                    },
+                    china: {
+                        title: 'Chine',
+                        endereco: 'Entrepôt & Bureau\nRoom B613, Block B\nHeng Sheng Building\nNo. 205, Huanshi Middle Road\nGuangzhou, Chine',
+                        telefone: '+86 137 1124 8068',
+                        horario: 'Lun-Sam: 9h-18h',
+                        email: 'china@zhenglogistics.com'
+                    },
+                    mali: {
+                        title: 'Mali',
+                        endereco: 'Bureau Régional\nBamako\nMali',
+                        telefone: '+223 7916 4569',
+                        horario: 'Lun-Ven: 8h-17h',
+                        email: 'mali@zhenglogistics.com'
+                    },
+                    cotedivoire: {
+                        title: 'Côte d\'Ivoire',
+                        endereco: 'Bureau Régional\nAbidjan\nCôte d\'Ivoire',
+                        telefone: 'Bientôt disponible',
+                        status: 'En développement',
+                        email: 'ivorycoast@zhenglogistics.com'
+                    }
+                },
+                contact: {
+                    title: 'Contactez-nous',
+                    subtitle: 'Nous sommes prêts à vous aider avec vos besoins logistiques. Contactez-nous par l\'un de nos canaux.',
+                    orcamento: 'Demander un Devis',
+                    form: {
+                        nome: 'Nom Complet *',
+                        empresa: 'Entreprise',
+                        email: 'Email *',
+                        telefone: 'Téléphone *',
+                        pais: 'Pays',
+                        servico: 'Service d\'Intérêt',
+                        mensagem: 'Message *',
+                        enviar: 'Envoyer la Demande',
+                        placeholder: {
+                            nome: 'Votre nom',
+                            empresa: 'Nom de l\'entreprise',
+                            email: 'votre@email.com',
+                            telefone: '+258 XX XXX XXXX',
+                            pais: 'Sélectionner...',
+                            servico: 'Sélectionner...',
+                            mensagem: 'Décrivez vos besoins logistiques...'
+                        },
+                        opcoesPais: {
+                            mz: 'Mozambique',
+                            ml: 'Mali',
+                            ci: 'Côte d\'Ivoire',
+                            cn: 'Chine',
+                            other: 'Autre'
+                        },
+                        opcoesServico: {
+                            maritime: 'Transport Maritime',
+                            air: 'Transport Aérien',
+                            land: 'Transport Terrestre',
+                            vehicles: 'Importation de Véhicules',
+                            customs: 'Dédouanement',
+                            warehousing: 'Entreposage',
+                            procurement: 'Achats',
+                            other: 'Autre'
+                        }
+                    },
+                    redesSociais: 'Suivez-nous sur les Réseaux Sociaux',
+                    redesDesc: 'Restez informé de nos dernières nouvelles et offres'
+                },
+                footer: {
+                    descricao: 'Connecter l\'Afrique et l\'Asie avec excellence dans les solutions logistiques depuis plus de 10 ans. We Add Value to your business.',
+                    servicos: 'Services',
+                    empresa: 'Entreprise',
+                    contactRapido: 'Contact Rapide',
+                    droits: 'Tous droits réservés',
+                    copyright: '© 2026 Zheng Logistics. Tous droits réservés. | We Add Value',
+                    locais: 'Mozambique • Chine • Mali • Côte d\'Ivoire'
+                }
+            },
+            zh: {
+                nav: {
+                    inicio: '首页',
+                    servicos: '服务',
+                    transporte: '运输',
+                    sobre: '关于',
+                    processo: '流程',
+                    localizacoes: '地点',
+                    contacto: '联系'
+                },
+                hero: {
+                    title: 'ZHENG LOGISTICS',
+                    tagline: 'We Add Value',
+                    desc: '以卓越的综合物流解决方案连接非洲和亚洲。海运、空运和陆运。车辆进口。安全仓储。',
+                    orcamento: '请求报价',
+                    servicosBtn: '我们的服务',
+                    paises: '国家',
+                    anos: '年经验',
+                    clientes: '满意客户',
+                    suporte: '支持'
+                },
+                services: {
+                    title: '我们的完整服务',
+                    subtitle: '我们提供完整的定制物流解决方案，满足您的特定业务需求，确保每个阶段的效率、安全和准时性。',
+                    armazenagem: {
+                        title: '专业仓储',
+                        desc: '现代化安全的基础设施，配备实时库存管理系统进行货物存储。',
+                        features: [
+                            '恒温仓库',
+                            '先进的WMS系统',
+                            '24/7安全',
+                            '实时库存管理',
+                            '定制拣选和包装'
+                        ]
+                    },
+                    aduaneiro: {
+                        title: '清关服务',
+                        desc: '凭借对当地法规的深入了解，敏捷高效地处理所有海关文件。',
+                        features: [
+                            '关税分类',
+                            '特殊海关制度',
+                            '进出口许可证',
+                            '税务咨询',
+                            '海关代理'
+                        ]
+                    },
+                    transporte: {
+                        title: '多式联运',
+                        desc: '拥有自有车队和合格合作伙伴的完整陆运解决方案，确保准时交付。',
+                        features: [
+                            '专用运输',
+                            '实时GPS追踪',
+                            '货物保险',
+                            '紧急交付',
+                            '交叉对接'
+                        ]
+                    },
+                    procurement: {
+                        title: '采购与寻源',
+                        desc: '在中国和国际市场进行完整的采购管理，包括谈判、质量检查和合并。',
+                        features: [
+                            '供应商研究',
+                            '价格谈判',
+                            '质量控制',
+                            '货物合并',
+                            '生产监控'
+                        ]
+                    },
+                    transito: {
+                        title: '海关转运',
+                        desc: '通过完整的文件管理和海关程序促进国际货物转运。',
+                        features: [
+                            '转运制度',
+                            '银行担保',
+                            '24/7监控',
+                            '国际走廊',
+                            '边境管理'
+                        ]
+                    },
+                    importacao: {
+                        title: '进出口',
+                        desc: '完整的对外贸易服务，在非洲和亚洲市场具有专业知识，促进您的全球业务。',
+                        features: [
+                            '贸易咨询',
+                            '完整文件',
+                            '原产地证书',
+                            '国际支付',
+                            '法规合规'
+                        ]
+                    },
+                    veiculos: {
+                        title: '车辆进口',
+                        desc: '从中国、欧洲和其他市场进口新旧车辆的专家，流程简化。',
+                        features: [
+                            '新旧车辆',
+                            '装船前检查',
+                            '完整文件',
+                            '国际保险',
+                            '门到门交付'
+                        ]
+                    },
+                    consultoria: {
+                        title: '物流咨询',
+                        desc: '分析和优化您的供应链，以降低成本和提高运营效率。',
+                        features: [
+                            '物流审计',
+                            '路线优化',
+                            '成本降低',
+                            '战略规划',
+                            'KPI管理'
+                        ]
+                    }
+                },
+                transport: {
+                    title: '运输方式',
+                    subtitle: '我们提供完整的海运、空运和陆运解决方案，适应您货物和截止日期的特定需求。',
+                    maritimo: {
+                        title: '海运',
+                        fcl: '整箱运输(FCL)',
+                        fclItems: [
+                            '20尺和40尺集装箱',
+                            '高箱可用',
+                            '货物合并'
+                        ],
+                        lcl: '拼箱运输(LCL)',
+                        lclItems: [
+                            '每周合并',
+                            '仓储包含',
+                            '体积灵活性'
+                        ],
+                        rotas: '主要航线: 中国 → 莫桑比克, 中国 → 科特迪瓦, 中国 → 马里'
+                    },
+                    aereo: {
+                        title: '空运',
+                        expresso: '快递空运',
+                        expressoItems: [
+                            '3-5天交付',
+                            '适合紧急情况',
+                            '高价值商品'
+                        ],
+                        standard: '标准空运',
+                        standardItems: [
+                            '7-10天交付',
+                            '最佳性价比',
+                            '完整追踪'
+                        ],
+                        especialidades: '特殊项目: 易腐产品、电子产品、重要文件、样品'
+                    },
+                    terrestre: {
+                        title: '陆运',
+                        nacional: '全国配送',
+                        nacionalItems: [
+                            '莫桑比克全国配送',
+                            '自有车队和合作伙伴',
+                            '零担和整车运输'
+                        ],
+                        regional: '区域运输',
+                        regionalItems: [
+                            'SADC走廊',
+                            '西非',
+                            '跨境专业知识'
+                        ],
+                        veiculos: '车辆: 3至30吨卡车、拖车、冷藏车'
+                    },
+                    importVeiculos: {
+                        title: '车辆进口',
+                        leves: '轻型车辆',
+                        levesItems: [
+                            '乘用车',
+                            'SUV和皮卡',
+                            '商用货车'
+                        ],
+                        pesados: '重型车辆',
+                        pesadosItems: [
+                            '卡车和巴士',
+                            '工程机械',
+                            '农用拖拉机'
+                        ],
+                        processo: '完整流程: 购买、检查、装运、清关和交付'
+                    }
+                },
+                about: {
+                    title: '关于Zheng Logistics',
+                    subtitle: '我们是综合物流解决方案的领先公司，十多年来一直在非洲和亚洲之间建立商业桥梁。',
+                    missao: {
+                        title: '我们的使命',
+                        desc: '通过创新、高效和定制的物流解决方案促进国际贸易，为客户业务增加实际价值，并为我们运营区域的经济发展做出贡献。'
+                    },
+                    visao: {
+                        title: '我们的愿景',
+                        desc: '成为连接非洲和亚洲最可靠和首选的物流公司，以运营卓越、技术创新和对可持续发展的承诺而闻名。'
+                    },
+                    valores: {
+                        title: '我们的价值观',
+                        desc: '诚信、卓越、创新、客户承诺、团队合作、社会和环境影响。这些价值观指导我们所有的日常决策和行动。'
+                    },
+                    porqueeescolher: '为什么选择Zheng Logistics?',
+                    presenca: {
+                        title: '国际存在',
+                        desc: '4个国家（莫桑比克、中国、马里和科特迪瓦）的战略办事处确保本地支持和深入的市场知识。'
+                    },
+                    agilidade: {
+                        title: '敏捷与效率',
+                        desc: '优化的流程和尖端技术确保所有操作中减少截止日期和具有竞争力的成本。'
+                    },
+                    seguranca: {
+                        title: '安全保障',
+                        desc: '全面的保险、实时追踪和严格的处理程序以保护您的货物。'
+                    },
+                    equipa: {
+                        title: '经验丰富的团队',
+                        desc: '具有国际物流、海关和外贸丰富经验的专业人员。'
+                    },
+                    tecnologia: {
+                        title: '先进技术',
+                        desc: '现代管理系统允许实时追踪、详细报告和操作完全透明。'
+                    },
+                    parceria: {
+                        title: '信任伙伴关系',
+                        desc: '与客户建立长期关系，基于透明度、清晰沟通和对结果的承诺。'
+                    }
+                },
+                process: {
+                    title: '我们的工作方式',
+                    subtitle: '我们简化的流程确保从物流操作开始到结束的无忧体验。',
+                    consulta: {
+                        title: '1. 初步咨询',
+                        desc: '通过任何渠道联系我们。我们的团队分析您的需求，并提供包含详细时间表和预算的个性化提案。'
+                    },
+                    planeamento: {
+                        title: '2. 规划',
+                        desc: '我们制定完整的物流计划，选择最佳路线、运输方式和必要的海关程序。'
+                    },
+                    execucao: {
+                        title: '3. 执行',
+                        desc: '我们管理整个过程：货物收集、文件处理、装运、运输和清关，在每个步骤中保持您的信息更新。'
+                    },
+                    entrega: {
+                        title: '4. 交付',
+                        desc: '我们在指定地点进行最终交付，包括所有必要的文件和收货确认。'
+                    },
+                    suporte: {
+                        title: '5. 持续支持',
+                        desc: '我们的团队在交付后保持可用，提供支持、报告、反馈和未来操作规划。'
+                    }
+                },
+                valores: {
+                    title: '我们的差异化',
+                    subtitle: '我们在物流流程的每个阶段都增加价值',
+                    precos: {
+                        title: '有竞争力的价格',
+                        desc: '与承运商和供应商的特权谈判确保最佳市场价格'
+                    },
+                    prazos: {
+                        title: '遵守截止日期',
+                        desc: '严格遵守既定时间表，并对任何变化进行主动沟通'
+                    },
+                    solucoes: {
+                        title: '定制解决方案',
+                        desc: '每个客户都是独特的 - 我们根据您业务的具体需求调整服务'
+                    },
+                    transparencia: {
+                        title: '完全透明',
+                        desc: '实时追踪和详细报告，让您完全了解操作情况'
+                    }
+                },
+                locations: {
+                    title: '我们的地点',
+                    subtitle: '在非洲和亚洲的战略存在，更好地服务客户',
+                    mocambique: {
+                        title: '莫桑比克',
+                        endereco: '非洲区域总部\nAv. Josina Machel, 766\n一楼, Alto Maé\n马普托, 莫桑比克',
+                        telefone: '+258 (86) 2682260',
+                        horario: '周一至周五: 8:00-17:00',
+                        email: 'mozambique@zhenglogistics.com'
+                    },
+                    china: {
+                        title: '中国',
+                        endereco: '仓库与办公室\nB613室, B座\n亨盛大厦\n环市中路205号\n广州, 中国',
+                        telefone: '+86 137 1124 8068',
+                        horario: '周一至周六: 9:00-18:00',
+                        email: 'china@zhenglogistics.com'
+                    },
+                    mali: {
+                        title: '马里',
+                        endereco: '区域办公室\n巴马科\n马里',
+                        telefone: '+223 7916 4569',
+                        horario: '周一至周五: 8:00-17:00',
+                        email: 'mali@zhenglogistics.com'
+                    },
+                    cotedivoire: {
+                        title: '科特迪瓦',
+                        endereco: '区域办公室\n阿比让\n科特迪瓦',
+                        telefone: '即将开通',
+                        status: '开发中',
+                        email: 'ivorycoast@zhenglogistics.com'
+                    }
+                },
+                contact: {
+                    title: '联系我们',
+                    subtitle: '我们随时准备帮助您解决物流需求。通过我们的任何渠道联系我们。',
+                    orcamento: '请求报价',
+                    form: {
+                        nome: '全名 *',
+                        empresa: '公司',
+                        email: '电子邮件 *',
+                        telefone: '电话 *',
+                        pais: '国家',
+                        servico: '感兴趣的服务',
+                        mensagem: '消息 *',
+                        enviar: '发送请求',
+                        placeholder: {
+                            nome: '您的姓名',
+                            empresa: '公司名称',
+                            email: 'your@email.com',
+                            telefone: '+258 XX XXX XXXX',
+                            pais: '选择...',
+                            servico: '选择...',
+                            mensagem: '描述您的物流需求...'
+                        },
+                        opcoesPais: {
+                            mz: '莫桑比克',
+                            ml: '马里',
+                            ci: '科特迪瓦',
+                            cn: '中国',
+                            other: '其他'
+                        },
+                        opcoesServico: {
+                            maritime: '海运',
+                            air: '空运',
+                            land: '陆运',
+                            vehicles: '车辆进口',
+                            customs: '清关',
+                            warehousing: '仓储',
+                            procurement: '采购',
+                            other: '其他'
+                        }
+                    },
+                    redesSociais: '在社交媒体上关注我们',
+                    redesDesc: '保持更新我们的最新新闻和优惠'
+                },
+                footer: {
+                    descricao: '十多年来，以卓越的物流解决方案连接非洲和亚洲。We Add Value to your business.',
+                    servicos: '服务',
+                    empresa: '公司',
+                    contactRapido: '快速联系',
+                    direitos: '保留所有权利',
+                    copyright: '© 2026 Zheng Logistics。保留所有权利。| We Add Value',
+                    locais: '莫桑比克 • 中国 • 马里 • 科特迪瓦'
+                }
+            }
+        };
+
+        // Estado atual da língua
+        let currentLanguage = 'pt';
+
+        // Função para alternar o dropdown
+        function toggleLanguage() {
+            const dropdown = document.getElementById('langDropdown');
+            dropdown.classList.toggle('active');
+        }
+
+        // Fechar dropdown ao clicar fora
+        document.addEventListener('click', function(event) {
+            const dropdown = document.getElementById('langDropdown');
+            const button = document.querySelector('.language-btn');
+            
+            if (!dropdown.contains(event.target) && !button.contains(event.target)) {
+                dropdown.classList.remove('active');
+            }
+        });
+
+        // Função para mudar a língua
+        function changeLang(lang) {
+            currentLanguage = lang;
+            updatePageLanguage();
+            updateLanguageButton(lang);
+            document.getElementById('langDropdown').classList.remove('active');
+            
+            // Salvar preferência no localStorage
+            localStorage.setItem('preferredLanguage', lang);
+        }
+
+        // Atualizar o botão de língua
+        function updateLanguageButton(lang) {
+            const button = document.querySelector('#currentLang');
+            const flags = {
+                'pt': '🇵🇹 Português',
+                'en': '🇬🇧 English',
+                'fr': '🇫🇷 Français',
+                'zh': '🇨🇳 中文'
+            };
+            button.textContent = flags[lang];
+        }
+
+        // Função principal para atualizar toda a página
+        function updatePageLanguage() {
+            const t = translations[currentLanguage];
+            
+            // Atualizar navegação
+            document.querySelectorAll('.nav-link').forEach((link, index) => {
+                const keys = ['inicio', 'servicos', 'transporte', 'sobre', 'processo', 'localizacoes', 'contacto'];
+                if (keys[index]) {
+                    link.textContent = t.nav[keys[index]];
+                }
+            });
+
+            // Atualizar hero section
+            const heroTitle = document.querySelector('.hero-title');
+            if (heroTitle) heroTitle.textContent = t.hero.title;
+            
+            const tagline = document.querySelector('.tagline');
+            if (tagline) tagline.textContent = t.hero.tagline;
+            
+            const heroDesc = document.querySelector('.hero-desc');
+            if (heroDesc) heroDesc.textContent = t.hero.desc;
+            
+            const ctaButtons = document.querySelectorAll('.cta-button');
+            if (ctaButtons[0]) ctaButtons[0].textContent = t.hero.orcamento;
+            if (ctaButtons[1]) ctaButtons[1].textContent = t.hero.servicosBtn;
+            
+            // Atualizar estatísticas
+            const statLabels = document.querySelectorAll('.stat-label');
+            const statKeys = ['paises', 'anos', 'clientes', 'suporte'];
+            statLabels.forEach((label, index) => {
+                if (statKeys[index]) {
+                    label.textContent = t.hero[statKeys[index]];
+                }
+            });
+
+            // Atualizar seção de serviços
+            updateServicesSection(t);
+            
+            // Atualizar seção de transporte
+            updateTransportSection(t);
+            
+            // Atualizar seção sobre
+            updateAboutSection(t);
+            
+            // Atualizar seção de processo
+            updateProcessSection(t);
+            
+            // Atualizar seção de valores
+            updateValuesSection(t);
+            
+            // Atualizar seção de localizações
+            updateLocationsSection(t);
+            
+            // Atualizar seção de contacto
+            updateContactSection(t);
+            
+            // Atualizar footer
+            updateFooterSection(t);
+            
+            // Atualizar títulos das seções
+            updateSectionTitles(t);
+        }
+
+        // Funções auxiliares para atualizar cada seção
+        function updateServicesSection(t) {
+            const sectionTitle = document.querySelector('#services .section-title');
+            if (sectionTitle) sectionTitle.textContent = t.services.title;
+            
+            const sectionSubtitle = document.querySelector('#services .section-subtitle');
+            if (sectionSubtitle) sectionSubtitle.textContent = t.services.subtitle;
+            
+            // Atualizar cada card de serviço
+            const serviceCards = document.querySelectorAll('#services .service-card');
+            const serviceKeys = [
+                'armazenagem', 'aduaneiro', 'transporte', 
+                'procurement', 'transito', 'importacao', 
+                'veiculos', 'consultoria'
+            ];
+            
+            serviceCards.forEach((card, index) => {
+                if (serviceKeys[index]) {
+                    const service = t.services[serviceKeys[index]];
+                    const title = card.querySelector('h3');
+                    const desc = card.querySelector('p');
+                    const features = card.querySelectorAll('.service-features li');
+                    
+                    if (title) title.textContent = service.title;
+                    if (desc) desc.textContent = service.desc;
+                    
+                    features.forEach((feature, featIndex) => {
+                        if (service.features[featIndex]) {
+                            feature.textContent = service.features[featIndex];
+                        }
+                    });
+                }
+            });
+        }
+
+        function updateTransportSection(t) {
+            const sectionTitle = document.querySelector('#transport .section-title');
+            if (sectionTitle) sectionTitle.textContent = t.transport.title;
+            
+            const sectionSubtitle = document.querySelector('#transport .section-subtitle');
+            if (sectionSubtitle) sectionSubtitle.textContent = t.transport.subtitle;
+            
+            // Atualizar cards de transporte
+            const transportCards = document.querySelectorAll('#transport .transport-card');
+            const transportKeys = ['maritimo', 'aereo', 'terrestre', 'importVeiculos'];
+            
+            transportCards.forEach((card, index) => {
+                if (transportKeys[index]) {
+                    const transport = t.transport[transportKeys[index]];
+                    const title = card.querySelector('h3');
+                    const paragraphs = card.querySelectorAll('p');
+                    const listItems = card.querySelectorAll('ul li');
+                    
+                    if (title) title.textContent = transport.title;
+                    
+                    // Atualizar parágrafos
+                    if (paragraphs[0]) paragraphs[0].innerHTML = `<strong>${transport.fcl || transport.expresso || transport.nacional || transport.leves}</strong>`;
+                    if (paragraphs[1]) paragraphs[1].innerHTML = `<strong>${transport.lcl || transport.standard || transport.regional || transport.pesados}</strong>`;
+                    if (paragraphs[2]) paragraphs[2].innerHTML = `<strong>${transportKeys[index] === 'maritimo' ? t.transport.maritimo.rotas : 
+                                                                   transportKeys[index] === 'aereo' ? t.transport.aereo.especialidades :
+                                                                   transportKeys[index] === 'terrestre' ? t.transport.terrestre.veiculos :
+                                                                   t.transport.importVeiculos.processo}</strong>`;
+                    
+                    // Atualizar itens da lista
+                    const allItems = [];
+                    if (transport.fclItems) allItems.push(...transport.fclItems);
+                    if (transport.lclItems) allItems.push(...transport.lclItems);
+                    if (transport.expressoItems) allItems.push(...transport.expressoItems);
+                    if (transport.standardItems) allItems.push(...transport.standardItems);
+                    if (transport.nacionalItems) allItems.push(...transport.nacionalItems);
+                    if (transport.regionalItems) allItems.push(...transport.regionalItems);
+                    if (transport.levesItems) allItems.push(...transport.levesItems);
+                    if (transport.pesadosItems) allItems.push(...transport.pesadosItems);
+                    
+                    listItems.forEach((item, itemIndex) => {
+                        if (allItems[itemIndex]) {
+                            item.textContent = allItems[itemIndex];
+                        }
+                    });
+                }
+            });
+        }
+
+        function updateAboutSection(t) {
+            const sectionTitle = document.querySelector('#about .section-title');
+            if (sectionTitle) sectionTitle.textContent = t.about.title;
+            
+            const sectionSubtitle = document.querySelector('#about .section-subtitle');
+            if (sectionSubtitle) sectionSubtitle.textContent = t.about.subtitle;
+            
+            // Atualizar características principais
+            const featureItems = document.querySelectorAll('#about .feature-item');
+            const featureKeys = ['missao', 'visao', 'valores'];
+            
+            featureItems.forEach((item, index) => {
+                if (featureKeys[index]) {
+                    const feature = t.about[featureKeys[index]];
+                    const title = item.querySelector('h3');
+                    const desc = item.querySelector('p');
+                    
+                    if (title) title.textContent = feature.title;
+                    if (desc) desc.textContent = feature.desc;
+                }
+            });
+            
+            // Atualizar "Porque Escolher"
+            const porqueeescolher = document.querySelector('#about h3');
+            if (porqueeescolher && porqueeescolher.textContent.includes('Porque Escolher')) {
+                porqueeescolher.textContent = t.about.porqueeescolher;
+            }
+            
+            // Atualizar características secundárias
+            const secondaryFeatures = document.querySelectorAll('#about .features-grid:last-child .feature-item');
+            const secondaryKeys = ['presenca', 'agilidade', 'seguranca', 'equipa', 'tecnologia', 'parceria'];
+            
+            secondaryFeatures.forEach((item, index) => {
+                if (secondaryKeys[index]) {
+                    const feature = t.about[secondaryKeys[index]];
+                    const title = item.querySelector('h3');
+                    const desc = item.querySelector('p');
+                    
+                    if (title) title.textContent = feature.title;
+                    if (desc) desc.textContent = feature.desc;
+                }
+            });
+        }
+
+        function updateProcessSection(t) {
+            const sectionTitle = document.querySelector('#process .section-title');
+            if (sectionTitle) sectionTitle.textContent = t.process.title;
+            
+            const sectionSubtitle = document.querySelector('#process .section-subtitle');
+            if (sectionSubtitle) sectionSubtitle.textContent = t.process.subtitle;
+            
+            // Atualizar itens do timeline
+            const timelineItems = document.querySelectorAll('#process .timeline-content:not([style])');
+            const timelineKeys = ['consulta', 'planeamento', 'execucao', 'entrega', 'suporte'];
+            
+            timelineItems.forEach((item, index) => {
+                if (timelineKeys[index]) {
+                    const step = t.process[timelineKeys[index]];
+                    const title = item.querySelector('h3');
+                    const desc = item.querySelector('p');
+                    
+                    if (title) title.textContent = step.title;
+                    if (desc) desc.textContent = step.desc;
+                }
+            });
+        }
+
+        function updateValuesSection(t) {
+            const sectionTitle = document.querySelector('.section-dark .section-title');
+            const sectionSubtitle = document.querySelector('.section-dark .section-subtitle');
+            
+            if (sectionTitle && sectionTitle.textContent.includes('O Que Nos Diferencia')) {
+                sectionTitle.textContent = t.valores.title;
+            }
+            if (sectionSubtitle && sectionSubtitle.textContent.includes('Agregamos valor')) {
+                sectionSubtitle.textContent = t.valores.subtitle;
+            }
+            
+            // Atualizar valores
+            const valueProps = document.querySelectorAll('.value-prop');
+            const valueKeys = ['precos', 'prazos', 'solucoes', 'transparencia'];
+            
+            valueProps.forEach((prop, index) => {
+                if (valueKeys[index]) {
+                    const value = t.valores[valueKeys[index]];
+                    const title = prop.querySelector('h4');
+                    const desc = prop.querySelector('p');
+                    
+                    if (title) title.textContent = value.title;
+                    if (desc) desc.textContent = value.desc;
+                }
+            });
+        }
+
+        function updateLocationsSection(t) {
+            const sectionTitle = document.querySelector('#locations .section-title');
+            if (sectionTitle) sectionTitle.textContent = t.locations.title;
+            
+            const sectionSubtitle = document.querySelector('#locations .section-subtitle');
+            if (sectionSubtitle) sectionSubtitle.textContent = t.locations.subtitle;
+            
+            // Atualizar cards de localização
+            const locationCards = document.querySelectorAll('#locations .location-card');
+            const locationKeys = ['mocambique', 'china', 'mali', 'cotedivoire'];
+            
+            locationCards.forEach((card, index) => {
+                if (locationKeys[index]) {
+                    const location = t.locations[locationKeys[index]];
+                    const title = card.querySelector('h3');
+                    const address = card.querySelector('.address');
+                    const phone = card.querySelector('.phone');
+                    const info = card.querySelector('p');
+                    
+                    if (title) title.textContent = location.title;
+                    if (address) {
+                        address.innerHTML = `<strong>${locationKeys[index] === 'mocambique' ? 'Sede Regional África' : 
+                                                           locationKeys[index] === 'china' ? 'Armazém & Escritório' : 
+                                                           'Escritório Regional'}</strong><br>` + 
+                                           location.endereco.replace(/\n/g, '<br>');
+                    }
+                    if (phone) phone.textContent = `📞 ${location.telefone}`;
+                    if (info) {
+                        const lines = location.horario.split('\n');
+                        info.innerHTML = `<strong>${location.status ? 'Status' : 'Horário'}:</strong> ${lines[0]}<br>` +
+                                        `<strong>Email:</strong> ${location.email}`;
+                    }
+                }
+            });
+        }
+
+        function updateContactSection(t) {
+            const sectionTitle = document.querySelector('#contact .section-title');
+            if (sectionTitle) sectionTitle.textContent = t.contact.title;
+            
+            const sectionSubtitle = document.querySelector('#contact .section-subtitle');
+            if (sectionSubtitle) sectionSubtitle.textContent = t.contact.subtitle;
+            
+            // Atualizar formulário
+            const formTitle = document.querySelector('#contact h3');
+            if (formTitle && formTitle.textContent.includes('Solicite')) {
+                formTitle.textContent = t.contact.orcamento;
+            }
+            
+            // Atualizar labels do formulário
+            const form = document.querySelector('#contact form');
+            if (form) {
+                const labels = form.querySelectorAll('label');
+                const placeholders = form.querySelectorAll('input, textarea, select');
+                const submitBtn = form.querySelector('.submit-btn');
+                const selectOptions = form.querySelectorAll('option');
+                
+                // Labels
+                const labelKeys = ['nome', 'empresa', 'email', 'telefone', 'pais', 'servico', 'mensagem'];
+                labels.forEach((label, index) => {
+                    if (labelKeys[index]) {
+                        label.textContent = t.contact.form[labelKeys[index]];
+                    }
+                });
+                
+                // Placeholders
+                placeholders.forEach((input, index) => {
+                    const placeholderKey = Object.keys(t.contact.form.placeholder)[index];
+                    if (placeholderKey && t.contact.form.placeholder[placeholderKey]) {
+                        input.placeholder = t.contact.form.placeholder[placeholderKey];
+                    }
+                });
+                
+                // Botão de submit
+                if (submitBtn) submitBtn.textContent = t.contact.form.enviar;
+                
+                // Opções dos selects
+                selectOptions.forEach((option, index) => {
+                    if (option.value && t.contact.form.opcoesPais[option.value]) {
+                        option.textContent = t.contact.form.opcoesPais[option.value];
+                    } else if (option.value && t.contact.form.opcoesServico[option.value]) {
+                        option.textContent = t.contact.form.opcoesServico[option.value];
+                    }
+                });
+            }
+            
+            // Atualizar cards de contacto
+            const contactCards = document.querySelectorAll('#contact .contact-card');
+            const contactKeys = ['mocambique', 'china', 'mali'];
+            
+            contactCards.forEach((card, index) => {
+                if (contactKeys[index]) {
+                    const location = t.locations[contactKeys[index]];
+                    const title = card.querySelector('h3');
+                    const paragraphs = card.querySelectorAll('p');
+                    
+                    if (title) title.textContent = `${locationKeys[index] === 'mocambique' ? '🇲🇿 ' : 
+                                                     locationKeys[index] === 'china' ? '🇨🇳 ' : 
+                                                     '🇲🇱 '}${location.title}`;
+                    
+                    if (paragraphs[0]) paragraphs[0].innerHTML = `<strong>${currentLanguage === 'en' ? 'Phone:' : 
+                                                                   currentLanguage === 'fr' ? 'Téléphone:' : 
+                                                                   currentLanguage === 'zh' ? '电话:' : 
+                                                                   'Telefone:'}</strong> ${location.telefone}`;
+                    if (paragraphs[1]) paragraphs[1].innerHTML = `<strong>Email:</strong> ${location.email}`;
+                    if (paragraphs[2]) paragraphs[2].innerHTML = `<strong>${currentLanguage === 'en' ? 'Address:' : 
+                                                                   currentLanguage === 'fr' ? 'Adresse:' : 
+                                                                   currentLanguage === 'zh' ? '地址:' : 
+                                                                   'Endereço:'}</strong> ${location.endereco.split('\n')[0]}`;
+                    if (paragraphs[3]) paragraphs[3].innerHTML = `<strong>${currentLanguage === 'en' ? 'Schedule:' : 
+                                                                   currentLanguage === 'fr' ? 'Horaire:' : 
+                                                                   currentLanguage === 'zh' ? '时间:' : 
+                                                                   'Horário:'}</strong> ${location.horario}`;
+                }
+            });
+            
+            // Atualizar seção de redes sociais
+            const socialTitle = document.querySelector('.social-section h3');
+            if (socialTitle) socialTitle.textContent = t.contact.redesSociais;
+            
+            const socialDesc = document.querySelector('.social-section p');
+            if (socialDesc) socialDesc.textContent = t.contact.redesDesc;
+        }
+
+        function updateFooterSection(t) {
+            // Atualizar descrição
+            const footerDesc = document.querySelector('.footer-section p');
+            if (footerDesc) footerDesc.textContent = t.footer.descricao;
+            
+            // Atualizar títulos
+            const footerTitles = document.querySelectorAll('.footer-section h4');
+            const footerTitleKeys = ['Zheng Logistics', 'servicos', 'empresa', 'contactRapido'];
+            
+            footerTitles.forEach((title, index) => {
+                if (footerTitleKeys[index] && footerTitleKeys[index] !== 'Zheng Logistics') {
+                    title.textContent = t.footer[footerTitleKeys[index]];
+                }
+            });
+            
+            // Atualizar links de serviços
+            const serviceLinks = document.querySelectorAll('.footer-section:nth-child(2) a');
+            const serviceKeys = ['Armazenagem', 'Despacho Aduaneiro', 'Transporte Multimodal', 'Importação de Veículos', 'Procurement'];
+            
+            serviceLinks.forEach((link, index) => {
+                if (serviceKeys[index]) {
+                    const key = serviceKeys[index].toLowerCase().replace(' ', '').replace('ç', 'c').replace('ã', 'a');
+                    if (key === 'armazenagem') link.textContent = t.services.armazenagem.title;
+                    else if (key === 'despachoaduaneiro') link.textContent = t.services.aduaneiro.title;
+                    else if (key === 'transportemultimodal') link.textContent = t.services.transporte.title;
+                    else if (key === 'importacaodeveiculos') link.textContent = t.services.veiculos.title;
+                    else if (key === 'procurement') link.textContent = t.services.procurement.title;
+                }
+            });
+            
+            // Atualizar links da empresa
+            const companyLinks = document.querySelectorAll('.footer-section:nth-child(3) a');
+            const companyKeys = ['Sobre Nós', 'Como Trabalhamos', 'Localizações', 'Contacto'];
+            
+            companyLinks.forEach((link, index) => {
+                if (companyKeys[index]) {
+                    const key = companyKeys[index].toLowerCase().replace(' ', '').replace('ç', 'c');
+                    if (key === 'sobrenos') link.textContent = t.about.title;
+                    else if (key === 'comotrabalhamos') link.textContent = t.process.title;
+                    else if (key === 'localizacoes') link.textContent = t.locations.title;
+                    else if (key === 'contacto') link.textContent = t.contact.title;
+                }
+            });
+            
+            // Atualizar copyright
+            const copyright = document.querySelector('.footer-bottom p:first-child');
+            if (copyright) copyright.textContent = t.footer.copyright;
+            
+            const locations = document.querySelector('.footer-bottom p:last-child');
+            if (locations) locations.textContent = t.footer.locais;
+        }
+
+        function updateSectionTitles(t) {
+            // Esta função atualiza títulos que podem ter sido perdidos
+            const sections = document.querySelectorAll('.section-title');
+            sections.forEach(title => {
+                const text = title.textContent;
+                if (text.includes('Nossos Serviços Completos')) title.textContent = t.services.title;
+                else if (text.includes('Modalidades de Transporte')) title.textContent = t.transport.title;
+                else if (text.includes('Sobre a Zheng Logistics')) title.textContent = t.about.title;
+                else if (text.includes('Como Trabalhamos')) title.textContent = t.process.title;
+                else if (text.includes('Nossas Localizações')) title.textContent = t.locations.title;
+                else if (text.includes('Entre em Contacto')) title.textContent = t.contact.title;
+                else if (text.includes('O Que Nos Diferencia')) title.textContent = t.valores.title;
+            });
+        }
+
+        // Carregar língua salva ou usar padrão
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferredLanguage') || 'pt';
+            changeLang(savedLang);
+            
+            // Adicionar smooth scrolling para links de navegação
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Fechar dropdown ao rolar
+            window.addEventListener('scroll', function() {
+                document.getElementById('langDropdown').classList.remove('active');
+            });
+        });
+
+        // Adicionar envio do formulário (simulação)
+        document.querySelector('form')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert(currentLanguage === 'pt' ? 'Obrigado! Sua solicitação foi enviada. Entraremos em contacto em breve.' :
+                  currentLanguage === 'en' ? 'Thank you! Your request has been sent. We will contact you soon.' :
+                  currentLanguage === 'fr' ? 'Merci! Votre demande a été envoyée. Nous vous contacterons bientôt.' :
+                  '谢谢！您的请求已发送。我们将尽快与您联系。');
+            this.reset();
+        });
+
+                // Função para alternar menu mobile
+        function toggleMenu() {
+            const navRight = document.getElementById('navRight');
+            navRight.classList.toggle('active');
+            
+            // Alternar ícone do menu
+            const menuToggle = document.querySelector('.menu-toggle');
+            if (navRight.classList.contains('active')) {
+                menuToggle.textContent = '✕';
+            } else {
+                menuToggle.textContent = '☰';
+            }
+        }
+
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('.nav-link, .language-option').forEach(link => {
+            link.addEventListener('click', () => {
+                const navRight = document.getElementById('navRight');
+                const menuToggle = document.querySelector('.menu-toggle');
+                
+                if (navRight.classList.contains('active')) {
+                    navRight.classList.remove('active');
+                    menuToggle.textContent = '☰';
+                }
+            });
+        });
+
+        // Fechar menu ao redimensionar a janela para desktop
+        window.addEventListener('resize', () => {
+            const navRight = document.getElementById('navRight');
+            const menuToggle = document.querySelector('.menu-toggle');
+            
+            if (window.innerWidth > 992 && navRight.classList.contains('active')) {
+                navRight.classList.remove('active');
+                menuToggle.textContent = '☰';
+            }
+        });
+
+        // Fechar menu ao clicar fora
+        document.addEventListener('click', function(event) {
+            const navRight = document.getElementById('navRight');
+            const menuToggle = document.querySelector('.menu-toggle');
+            
+            if (navRight.classList.contains('active') && 
+                !navRight.contains(event.target) && 
+                !menuToggle.contains(event.target)) {
+                navRight.classList.remove('active');
+                menuToggle.textContent = '☰';
+            }
+        });
+    </script>
+</body>
+</html>
+                    
